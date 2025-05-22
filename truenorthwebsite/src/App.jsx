@@ -19,13 +19,19 @@ function App() {
 
   const AboutUs = () => {
     return(
-      <div className = " text-red-700">
-        Jashan
+      <div className = " text-red-700 algin-center border w-[1500px] h-fit">
+        <div className = " w-100% m-[10px] border h-[100px]">
+          TrueNorth
+        </div>
+        <div className = "w-100% h-[fit] flex m-[10px]">
+          <div className = "border w-1/2 h-[150px] border-box mr-[5px]"></div>
+          <div className = "border w-1/2 h-[150px] border-box ml-[5px]"></div>
+        </div>
       </div>
     );
   }
   return (
-    <div className = "bg-black w-dvw h-dvh flex flex-col">
+    <div className = "bg-black w-dvw h-dvh flex flex-col items-center">
       <Navbar/>
          <Router>
           <Routes>

@@ -1,19 +1,28 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import LOGO from "./assets/rectangle_red_logo.png";
 import './App.css'
 
 function App() {
   
   const Navbar = () => {
-    const navbarStyle = "border mr-[10px] ml-[10px] m-[5px] p-[4px] rounded hover:bg-red-400"
+    const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] hover:bg-red-400 w-fit"
     return (
-      <div className="flex justify-center">
-        <div className = "flex border justify-center m-[5px] rounded w-[1000px] h-fit bg-red-500 ">
-          <a to="/" className = {navbarStyle}>About Us</a>
-          <a to="/contact"className = {navbarStyle}>Coaches</a>
-          <p className = {navbarStyle}>Members</p>  
+
+        <div className = "flex border justify-center m-[5px] rounded w-[1000px] h-fit items-center bg-red-700 bg-gradient-to-bl to-white">
+
+          <div className = "w-1/2  m-[5px]">
+            <img src={LOGO} className = "w-[150px] rounded"></img>
+          </div>
+
+          <div className = "w-1/2  flex justify-end m-[5px]">
+            <a className = {navbarStyle}>About Us</a>
+            <a className = {navbarStyle}>Members</a>
+            <p className = {navbarStyle}>Contact Us</p>  
+          </div>
+
         </div>
-      </div>
+        
     );
   }
 
@@ -31,7 +40,7 @@ function App() {
     );
   }
   return (
-    <div className = "bg-black w-dvw h-dvh flex flex-col items-center">
+    <div className = "bg-[#050124] w-dvw h-dvh flex flex-col items-center">
       <Navbar/>
          <Router>
           <Routes>

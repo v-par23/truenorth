@@ -6,19 +6,21 @@ import './App.css'
 function App() {
   
   const Navbar = () => {
-    const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] hover:bg-red-400 w-fit"
+    const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white"
     return (
 
-        <div className = "flex border justify-center m-[5px] rounded w-[1000px] h-fit items-center bg-red-700 bg-gradient-to-bl to-white">
+        <div className = "flex border justify-center m-[5px] rounded w-[1000px] h-fit items-center ">
 
           <div className = "w-1/2  m-[5px]">
             <img src={LOGO} className = "w-[150px] rounded"></img>
           </div>
 
-          <div className = "w-1/2  flex justify-end m-[5px]">
+          <div className = "w-fit  h-fit flex justify-end m-[7px] border-red-600 border-2 rounded">
             <a className = {navbarStyle}>About Us</a>
+            <a className = {navbarStyle}>Coaches</a>
             <a className = {navbarStyle}>Members</a>
-            <p className = {navbarStyle}>Contact Us</p>  
+            <a className = {navbarStyle}>News</a>
+            <p className = {navbarStyle}>Contact Info</p>  
           </div>
 
         </div>
@@ -40,7 +42,7 @@ function App() {
     );
   }
   return (
-    <div className = "bg-[#050124] w-dvw h-dvh flex flex-col items-center">
+    <div className = " bg-black w-dvw h-dvh flex flex-col items-center">
       <Navbar/>
          <Router>
           <Routes>

@@ -6,10 +6,10 @@ import './App.css'
 function App() {
   
   const Navbar = () => {
-    const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white"
+    const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-400"
     return (
 
-        <div className = "flex border justify-center m-[5px] rounded w-[1000px] h-fit items-center ">
+        <div className = "flex border justify-center m-[5px] rounded w-[1000px] h-fit items-center">
 
           <div className = "w-1/2  m-[5px]">
             <img src={LOGO} className = "w-[150px] rounded"></img>
@@ -28,16 +28,26 @@ function App() {
     );
   }
 
+  // const Intro = () => {
+  //   return(
+  //     <div>
+  //       <h1>True North Table Tennis</h1>
+  //     </div>
+  //   );
+  // }
+
   const AboutUs = () => {
     return(
-      <div className = " text-red-700 algin-center border w-[1500px] h-fit">
-        <div className = " w-100% m-[10px] border h-[100px]">
-          TrueNorth
+      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center">
+        <h1 className = "text-white text-[100px]">True North Table Tennis</h1>
+        <p className = " text-gray-400 text-[50px] m-top-50">Where Champtions Rise</p>
+
+        <div className = "text-white flex flex-col items-center">
+          <p>Embody the spirit of a champion with resilient, </p>
+          <p>fearless, and unstoppable training. Join the King of the</p>
+          <p>North and claim your rightful place at the top.</p>
         </div>
-        <div className = "w-100% h-[fit] flex m-[10px]">
-          <div className = "border w-1/2 h-[150px] border-box mr-[5px]"></div>
-          <div className = "border w-1/2 h-[150px] border-box ml-[5px]"></div>
-        </div>
+
       </div>
     );
   }

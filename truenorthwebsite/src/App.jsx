@@ -16,7 +16,7 @@ function App() {
           </div>
 
           <div className = "w-fit  h-fit flex justify-end m-[7px] border-red-600 border-2 rounded">
-            <a className = {navbarStyle}>About Us</a>
+            <a className = {navbarStyle}>About Us ffff</a>
             <a className = {navbarStyle}>Coaches</a>
             <a className = {navbarStyle}>Members</a>
             <a className = {navbarStyle}>News</a>

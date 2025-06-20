@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import LOGO from "./assets/rectangle_red_logo.png";
+import img from "./assets/image.png";
 import './App.css'
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
           </div>
 
           <div className = "w-fit  h-fit flex justify-end m-[7px] border-red-600 border-2 rounded">
-            <a className = {navbarStyle}>About Us fff</a>
-            <a className = {navbarStyle}>Players gay</a>
+            <a className = {navbarStyle}>About Us</a>
+            <a className = {navbarStyle}>Coaches</a>
             <a className = {navbarStyle}>Members</a>
             <a className = {navbarStyle}>News</a>
             <p className = {navbarStyle}>Contact Info</p>  
@@ -51,12 +52,29 @@ function App() {
       </div>
     );
   }
+
+  const Intro = () => {
+    return( 
+      <div >
+        <p className = "text-white text-[50px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
+        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of  <div className = "text-red-400">  Champions.</div> Heart of the<div className = "text-red-400">  North.</div></p>
+        <div className = "w-1/2  m-[5px]">
+            <img src={img} className = "w-[150px] rounded"></img>
+          </div>
+        <div className = "w-[400px] text-white -[20x] m-top 300  flex flex-col items-right">
+          <div>At True North Table Tennis Club, our name represents more than a place. It stands for leadership, resilience, and the spirit of a champion. “True North” is the King of the North, a force powered by discipline, skill, and unwavering passion.<br></br> 
+          We train every player to rise with courage, heart, and relentless dedication, both on and off the table. Welcome to True North, where champions rise and the King of the North is born.</div>
+        </div>
+        
+      </div>
+    );
+  }
   return (
     <div className = " bg-black w-dvw h-dvh flex flex-col items-center">
       <Navbar/>
          <Router>
           <Routes>
-            <Route path="/" element={<AboutUs/>} />
+            <Route path="/" element={<Intro/>} />
             {/* <Route path="/about" element={} />
             <Route path="/contact" element={} /> */}
           </Routes>

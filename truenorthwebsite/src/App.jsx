@@ -9,14 +9,14 @@ function App() {
     const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-400"
     return (
 
-        <div className = "flex border justify-center m-[5px] rounded w-[1000px] h-fit items-center">
+        <div className = "flex justify-center m-[5px] rounded w-[1000px] h-fit items-center">
 
           <div className = "w-1/2  m-[5px]">
             <img src={LOGO} className = "w-[150px] rounded"></img>
           </div>
 
           <div className = "w-fit  h-fit flex justify-end m-[7px] border-red-600 border-2 rounded">
-            <a className = {navbarStyle}>About Us ffff</a>
+            <a className = {navbarStyle}>About Us</a>
             <a className = {navbarStyle}>Coaches</a>
             <a className = {navbarStyle}>Members</a>
             <a className = {navbarStyle}>News</a>
@@ -38,7 +38,7 @@ function App() {
 
   const AboutUs = () => {
     return(
-      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center">
+      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
         <h1 className = "text-white text-[100px]">True North Table Tennis</h1>
         <p className = " text-gray-400 text-[50px] m-top-50">Where Champtions Rise</p>
 
@@ -48,11 +48,20 @@ function App() {
           <p>North and claim your rightful place at the top.</p>
         </div>
 
+        <div className = "flex flex-row m-top-[40px]">
+          <div className = "bg-red-600 w-[150px] h-[50px] rounded flex justify-center items-center text-white m-[10px]">
+            Join Now
+          </div>
+          <div className = "bg-gray-800 w-[150px] h-[50px] rounded flex justify-center items-center text-white m-[10px] border-2 border-gray-500">
+            Learn More
+          </div>
+        </div>
+
       </div>
     );
   }
   return (
-    <div className = " bg-black w-dvw h-dvh flex flex-col items-center">
+    <div className = " w-dvw h-dvh flex flex-col items-center bg-gradient-to-br via-black via-black via-black from-red-600 to-black">
       <Navbar/>
          <Router>
           <Routes>

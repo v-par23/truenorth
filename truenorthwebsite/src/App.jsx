@@ -77,10 +77,6 @@ function App() {
     return( 
       <div >
         <p className = "text-white text-[50px] m-top-50 flex items-center flex-col justify-center">Meet Our Coaches</p>
-        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of  <div className = "text-red-400">  Champions.</div> Heart of the<div className = "text-red-400">  North.</div></p>
-        <div className="flex-1 max-w-xl right" >
-          <img src={img} alt="True North Table Tennis Club" className="rounded-lg w-w-xl" />
-        </div>
         <div className="flex-1 max-w-xl justify-center">
           <p className="text-white text-[20px] text-lg leading-relaxed">
                         Professional and experienced coach team from entry-level to top performance, 

@@ -73,28 +73,14 @@ function App() {
     );
   }
 
-  const Coaches = () => {
-    return( 
-      <div >
-        <p className = "text-white text-[50px] m-top-50 flex items-center flex-col justify-center">Meet Our Coaches</p>
-        <div className="flex-1 max-w-xl justify-center">
-          <p className="text-white text-[20px] text-lg leading-relaxed">
-                        Professional and experienced coach team from entry-level to top performance, 
-            <br /><br />
-            TrueNorth has the best coach team to meet your expectations.
-          </p>
-        </div>
-        
-      </div>
-    );
-  }
+
 
   return (
     <div className = " bg-black w-dvw h-dvh flex flex-col items-center">
       <Navbar/>
          <Router>
           <Routes>
-            <Route path="/" element={<Coaches/>} />
+            <Route path="/" element={<Intro/>} />
             {/* <Route path="/about" element={} />
             <Route path="/contact" element={} /> */}
           </Routes>

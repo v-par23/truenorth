@@ -46,14 +46,17 @@ function App() {
   }
 
   const Intro = () => {
+    const text = "Home of "
     return( 
-      <div >
+      <div>
         <p className = "text-white text-[50px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
-        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of  <div className = "text-red-400">  Champions.</div> Heart of the<div className = "text-red-400">  North.</div></p>
+        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of &nbsp; <div className = "text-red-400"> Champions.</div>&nbsp;Heart of the<div className = "text-red-400"> &nbsp; North.</div></p>
+        
+        <div className = "flex flex-row items-center justify-center">
         <div className="flex-1 max-w-xl right" >
           <img src={img} alt="True North Table Tennis Club" className="rounded-lg w-w-xl" />
         </div>
-        <div className="flex-1 max-w-xl text-left">
+        <div className="flex-1 max-w-xl text-left ml-[20px]">
           <p className="text-white text-[20px] text-lg leading-relaxed">
                         At True North Table Tennis Club, our name represents more than a place. It stands for leadership, resilience, and the spirit of a champion.
             “True North” is the King of the North, a force powered by discipline, skill, and unwavering passion.
@@ -62,6 +65,9 @@ function App() {
             Welcome to True North, where champions rise and the King of the North is born.
           </p>
         </div>
+        </div>
+
+
         <div className="text-white text-[25px] flex flex-wrap justify-center items-center gap-8 mt-16 text-center text-xl">
         <div className="border-t-2 border-red-500 pt-2">Elite Coaching Team</div>
         <div className="border-t-2 border-red-500 pt-2">State-of-the-Art Facilities</div>

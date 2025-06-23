@@ -50,7 +50,7 @@ function App() {
     return( 
       <div>
         <p className = "text-white text-[50px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
-        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of &nbsp; <div className = "text-red-400"> Champions.</div>&nbsp;Heart of the<div className = "text-red-400"> &nbsp; North.</div></p>
+        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of&nbsp; <div className = "text-red-400">Champions.</div>&nbsp;Heart of the<div className = "text-red-400"> &nbsp;North.</div></p>
         
         <div className = "flex flex-row items-center justify-center">
         <div className="flex-1 max-w-xl right" >

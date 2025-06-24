@@ -28,14 +28,6 @@ function App() {
     );
   }
 
-  // const Intro = () => {
-  //   return(
-  //     <div>
-  //       <h1>True North Table Tennis</h1>
-  //     </div>
-  //   );
-  // }
-
   const AboutUs = () => {
     return(
       <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">

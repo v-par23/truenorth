@@ -47,7 +47,7 @@ function App() {
           <p>Eugene Wang</p>
           <p>Founder & Head Coach</p>
           <img src={IMG3} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-700">More Info</div>
+          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-700 opacity-80">More Info</div>
           </div>
 
           <div className = "h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
@@ -154,6 +154,7 @@ function App() {
       <Coaches/>
          <Router>
           <Routes>
+            
           </Routes>
         </Router>
     </div>

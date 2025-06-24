@@ -97,13 +97,12 @@ function App() {
     );
   }
   return (
-    <div className = " w-dvw h-dvh flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
+    <div className = " w-dvw h-full flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
       <Navbar/>
+      <AboutUs/>
+      <Coaches/>
          <Router>
           <Routes>
-            <Route path="/" element={<Coaches/>} />
-            {/* <Route path="/about" element={} />
-            <Route path="/contact" element={} /> */}
           </Routes>
         </Router>
     </div>

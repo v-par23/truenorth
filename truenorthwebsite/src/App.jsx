@@ -36,36 +36,39 @@ function App() {
 
   const Coaches = () => {
     return(
-      <div className = "text-white w-3/4 flex justify-center items-center flex-col">
-        <div className = "flex text-[35px]">Meet Our Coaches</div>
+      <div className = "text-white w-9/10 flex justify-center items-center flex-col h-dvh">
+        <div className = "flex text-[40px]">Meet Our Coaches</div>
         <p className = "text-[15px] mt-[20px]">Professional and experienced coach team from entry-level to top performance,</p>
         <p className = "text-[15px]">TrueNorth has the best coach team to meet your expectations.</p>
 
         <div className = "flex flex-row w-full justify-center mt-[30px]">
 
-          <div className = "border w- h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <div className = "h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
           <p>Eugene Wang</p>
           <p>Founder & Head Coach</p>
-          <img src={IMG3}></img>
-          
+          <img src={IMG3} className = "w-3/4 rounded mt-[20px]"></img>
+          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-700">More Info</div>
           </div>
 
-          <div className = "border w- h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <div className = "h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
           <p>Hongtao chen</p>
           <p>Co-founder & Head Coach</p>
-          <img src={IMG1}></img>
+          <img src={IMG1} className = "w-3/4 rounded mt-[20px]"></img>
+          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-600">More Info</div>
           </div>
 
-          <div className = "border h-[100px] m-[10px] w-1/5 h-[250px] flex flex-col items-center">
+          <div className = "h-[100px] m-[10px] w-1/5 h-[250px] flex flex-col items-center">
           <p>Mo Zhang</p>
           <p>Head Coach</p>
-          <img src={IMG2} className = "w-[100px] h-[100px]"></img>
+          <img src={IMG2} className = "w-3/4 rounded mt-[20px]"></img>
+          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-600">More Info</div>
           </div>
 
-          <div className = "border w- h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <div className = "h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
           <p>Ye Lin</p>
           <p>Head Coach</p>
-          <img src={IMG4}></img>
+          <img src={IMG4} className = "w-3/4 rounded mt-[20px]"></img>
+          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-600">More Info</div>
           </div>
         </div>
 
@@ -101,9 +104,9 @@ function App() {
   const Intro = () => {
     const text = "Home of "
     return( 
-      <div>
-        <p className = "text-white text-[50px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
-        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of&nbsp; <div className = "text-red-400">Champions.</div>&nbsp;Heart of the<div className = "text-red-400"> &nbsp;North.</div></p>
+      <div className = "h-50vh">
+        <p className = "text-white text-[40px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
+        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of&nbsp; <div className = "text-red-600">Champions.</div>&nbsp;Heart of the<div className = "text-red-600"> &nbsp;North.</div></p>
         
         <div className = "flex flex-row items-center justify-center">
         <div className="flex-1 max-w-xl right" >
@@ -129,7 +132,7 @@ function App() {
             "Community and Competition",
           ].map((label) => (
             <div key={label} className="flex flex-col">
-              <div className="w-12 border-t-2 border-red-500 mb-2"></div>
+              <div className="w-12 border-t-2 border-red-600 mb-2"></div>
               <p className="text-white text-xl">{label}</p>
             </div>
           ))}
@@ -143,7 +146,7 @@ function App() {
 
 
   return (
-    <div className = " w-dvw h-full flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
+    <div className = " w-dvw h-fit flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
       <Navbar/>
       <AboutUs/>
       <Intro/>

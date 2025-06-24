@@ -76,7 +76,7 @@ function App() {
   const AboutUs = () => {
     return(
       <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
-        <div className = "text-white text-[80px]">True North Table Tennis</div>
+        <div className = "text-white text-[80px]">LTrue North Table Tennis</div>
         <div className = " text-gray-400 text-[45px]">Where Champions Rise</div>
 
         <div className = "text-white flex flex-col items-center mt-[20px] text-[25px]">

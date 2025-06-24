@@ -15,13 +15,13 @@ function App() {
     const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-300"
     return (
 
-        <div className = "flex justify-center m-[5px] mt-[40px] rounded w-3/4 h-fit items-center">
+        <div className = "flex justify-center m-[5px] mt-[40px] rounded w-3/4 h-fit items-center fixed ">
 
           <div className = "w-1/2  m-[5px]">
             <img src={LOGO} className = "w-[170px] rounded"></img>
           </div>
 
-          <div className = "w-fit  h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap">
+          <div className = "w-fit  h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-xs ">
             <a className = {navbarStyle}>About Us</a>
             <a className = {navbarStyle}>Coaches</a>
             <a className = {navbarStyle}>Members</a>
@@ -106,14 +106,14 @@ function App() {
     return( 
       <div className = "h-50vh">
         <p className = "text-white text-[40px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
-        <p className = "text-white text-[25px] m-top-100  flex items-center flex-row justify-center">Home of&nbsp; <div className = "text-red-600">Champions.</div>&nbsp;Heart of the<div className = "text-red-600"> &nbsp;North.</div></p>
+        <p className = "text-white text-[22px] m-top-100  flex items-center flex-row justify-center">Home of&nbsp; <div className = "text-red-600">Champions.</div>&nbsp;Heart of the<div className = "text-red-600"> &nbsp;North.</div></p>
         
-        <div className = "flex flex-row items-center justify-center">
+        <div className = "flex flex-row items-center justify-center mt-[40px]">
         <div className="flex-1 max-w-xl right" >
           <img src={img} alt="True North Table Tennis Club" className="rounded-lg w-w-xl" />
         </div>
         <div className="flex-1 max-w-xl text-left ml-[20px]">
-          <p className="text-white text-[20px] text-lg leading-relaxed">
+          <p className="text-white text-[18px] text-lg leading-relaxed">
                         At True North Table Tennis Club, our name represents more than a place. It stands for leadership, resilience, and the spirit of a champion.
             “True North” is the King of the North, a force powered by discipline, skill, and unwavering passion.
             <br /><br />
@@ -133,7 +133,7 @@ function App() {
           ].map((label) => (
             <div key={label} className="flex flex-col">
               <div className="w-12 border-t-2 border-red-600 mb-2"></div>
-              <p className="text-white text-xl">{label}</p>
+              <p className="text-white text-[18px]">{label}</p>
             </div>
           ))}
         </div>
@@ -152,7 +152,6 @@ function App() {
       <Intro/>
       <br></br>
       <Coaches/>
-
          <Router>
           <Routes>
           </Routes>

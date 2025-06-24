@@ -66,15 +66,23 @@ function App() {
           </p>
         </div>
         </div>
-
-
-        <div className="text-white text-[25px] flex flex-wrap justify-center items-center gap-8 mt-16 text-center text-xl">
-        <div className="border-t-2 border-red-500 pt-2">Elite Coaching Team</div>
-        <div className="border-t-2 border-red-500 pt-2">State-of-the-Art Facilities</div>
-        <div className="border-t-2 border-red-500 pt-2">Tailored Programs for All Levels</div>
-        <div className="border-t-2 border-red-500 pt-2">Community and Competition</div>
-      </div>
         
+        
+        <div className="w-[1260px] mx-auto flex flex-wrap justify-center items-start gap-20 mt-16">
+          {[
+            "Elite Coaching Team",
+            "State-of-the-Art Facilities",
+            "Tailored Programs for All Levels",
+            "Community and Competition",
+          ].map((label) => (
+            <div key={label} className="flex flex-col">
+              <div className="w-12 border-t-2 border-red-500 mb-2"></div>
+              <p className="text-white text-xl">{label}</p>
+            </div>
+          ))}
+        </div>
+
+ 
       </div>
     );
   }

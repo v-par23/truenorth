@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import LOGO from "./assets/rectangle_red_logo.png";
+import IMG1 from "./assets/image_1.png";
+import IMG2 from "./assets/image_2.png";
+import IMG3 from "./assets/image_3.png";
+import IMG4 from "./assets/image_4.png";
+
 import './App.css'
 
 function App() {
@@ -28,13 +33,44 @@ function App() {
     );
   }
 
-  // const Intro = () => {
-  //   return(
-  //     <div>
-  //       <h1>True North Table Tennis</h1>
-  //     </div>
-  //   );
-  // }
+  const Coaches = () => {
+    return(
+      <div className = "text-white  w-3/4 flex justify-center items-center flex-col">
+        <div className = "flex text-[35px]">Meet Our Coaches</div>
+        <p className = "text-[15px] mt-[20px]">Professional and experienced coach team from entry-level to top performance,</p>
+        <p className = "text-[15px]">TrueNorth has the best coach team to meet your expectations.</p>
+
+        <div className = "flex flex-row w-full justify-center mt-[30px]">
+
+          <div className = "border w- h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <p>Eugene Wang</p>
+          <p>Founder & Head Coach</p>
+          <img src={IMG3}></img>
+          
+          </div>
+
+          <div className = "border w- h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <p>Hongtao chen</p>
+          <p>Co-founder & Head Coach</p>
+          <img src={IMG1}></img>
+          </div>
+
+          <div className = "border h-[100px] m-[10px] w-1/5 h-[250px] flex flex-col items-center">
+          <p>Mo Zhang</p>
+          <p>Head Coach</p>
+          <img src={IMG2} className = "w-[100px] h-[100px]"></img>
+          </div>
+
+          <div className = "border w- h-[100px] m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <p>Ye Lin</p>
+          <p>Head Coach</p>
+          <img src={IMG4}></img>
+          </div>
+        </div>
+
+      </div>
+    );
+  }
 
   const AboutUs = () => {
     return(
@@ -65,7 +101,7 @@ function App() {
       <Navbar/>
          <Router>
           <Routes>
-            <Route path="/" element={<AboutUs/>} />
+            <Route path="/" element={<Coaches/>} />
             {/* <Route path="/about" element={} />
             <Route path="/contact" element={} /> */}
           </Routes>

@@ -141,6 +141,29 @@ function App() {
   }
   
 
+   const Contact = () => {
+    return(
+      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
+        <div className = "text-white text-[80px]">Contact Us</div>
+
+        <div className = "text-white flex flex-col items-center text-[25px]">
+          <p>Want to learn more? </p>
+        </div>
+
+        <div className = "text-white flex flex-col items-center mt-[20px] text-[18px]">
+          <p>(416) 525-7624 </p>
+          <p>truenorthtabletennis@hotmail.com</p>
+          <p>truenorthttc</p>
+          <p>3470 Pharmacy Ave, Scarborough, ON M1W 2S7</p>
+        </div>
+
+
+
+      </div>
+    );
+  }
+
+
 
   return (
     <div className = " w-dvw h-full flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
@@ -149,6 +172,7 @@ function App() {
       <Intro/>
       <br></br>
       <Coaches/>
+      <Contact/>
 
          <Router>
           <Routes>

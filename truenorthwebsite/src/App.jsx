@@ -140,13 +140,27 @@ function App() {
     );
   }
   
+   const Train = () => {
+    return(
+      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
+        <div className = "text-white text-[80px]">Train With Us</div>
+
+    
+
+
+
+      </div>
+    );
+  }
+
+
 
    const Contact = () => {
     return(
       <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
         <div className = "text-white text-[80px]">Contact Us</div>
 
-        <div className = "text-white flex flex-col items-center text-[25px]">
+        <div className = "text-red flex flex-col items-center text-[25px]">
           <p>Want to learn more? </p>
         </div>
 
@@ -172,6 +186,7 @@ function App() {
       <Intro/>
       <br></br>
       <Coaches/>
+      <Train/>
       <Contact/>
 
          <Router>

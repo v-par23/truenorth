@@ -130,14 +130,14 @@ const Home = () => {
           <div className = " m-[10px] w-1/5 h-fit flex flex-col items-center">
           <p className = "text-[20px]">Mo Zhang</p>
           <p>Head Coach</p>
-          <img src={IMG2} className = "w-3/4 rounded mt-[20px]"></img>
+          <img src={IMG4} className = "w-3/4 rounded mt-[20px]"></img>
           <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
           </div>
 
           <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
           <p className = "text-[20px]">Ye Lin</p>
           <p>Head Coach</p>
-          <img src={IMG4} className = "w-3/4 rounded mt-[20px]"></img>
+          <img src={IMG2} className = "w-3/4 rounded mt-[20px]"></img>
           <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
           </div>
         </div>

@@ -1,35 +1,12 @@
-import LOGO from "./assets/rectangle_red_logo.png";
+
 import IMG1 from "./assets/image_1.png";
 import IMG2 from "./assets/image_2.png";
 import IMG3 from "./assets/image_3.png";
 import IMG4 from "./assets/image_4.png";
 import img from "./assets/image.png";
-import { Link } from 'react-router-dom';
+import Navbar from "./Navbar";
 
 const Home = () => {
-    const Navbar = () => {
-    const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-300"
-    return (
-
-        <div className = "flex justify-center m-[5px] mt-[40px] rounded w-3/4 h-fit items-center fixed ">
-
-            <div className = "w-1/2  m-[5px]">
-            <img src={LOGO} className = "w-[170px] rounded"></img>
-            </div>
-
-            <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-xs ">
-            <a className = {navbarStyle} onClick={() => {document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });}}>About Us </a>
-            <a className = {navbarStyle} onClick={() => {document.getElementById("coaches")?.scrollIntoView({ behavior: "smooth" });}}>Coaches</a>
-            <a className = {navbarStyle} onClick={() => {document.getElementById("joinnow")?.scrollIntoView({ behavior: "smooth" });}}>Join Now</a>  
-            <a className = {navbarStyle}>Members</a>
-            <a className = {navbarStyle}>News</a>
-            
-            </div>
-
-        </div>
-        
-    );
-    }
 
     const AboutUs = () => {
         return(

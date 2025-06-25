@@ -39,7 +39,7 @@ function App() {
       <div className = "text-white w-9/10 flex justify-center items-center flex-col h-dvh" id="coaches">
         <div className = "flex text-[40px] ">Meet Our Coaches</div>
         <p className = "text-[20px] mt-[20px] font-extralight"><div className = "text-red-600">Professional</div>&nbsp;and <div className = "text-red-600"> &nbsp;experienced.</div> coach team from entry-level to top performance,</p>
-        <p className = "text-[20px] font-extralight"></p>
+        <p className = "text-[20px] font-extralight">TrueNorth has the best coach team to meet your expectations.</p>
 
         <div className = "flex flex-row w-full justify-center mt-[30px]">
 

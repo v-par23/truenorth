@@ -36,7 +36,7 @@ function App() {
 
   const Coaches = () => {
     return(
-      <div className = "text-white w-9/10 flex justify-center items-center flex-col h-dvh">
+      <div className = "text-white w-9/10 flex justify-center items-center flex-col h-dvh" id="coaches">
         <div className = "flex text-[40px] ">Meet Our Coaches</div>
         <p className = "text-[20px] mt-[20px] font-extralight">Professional and experienced coach team from entry-level to top performance,</p>
         <p className = "text-[20px] font-extralight">TrueNorth has the best coach team to meet your expectations.</p>
@@ -225,7 +225,6 @@ function App() {
       <Navbar/>
       <AboutUs/>
       <Intro/>
-      <br></br>
       <Coaches/>
       <Train/>
 

@@ -20,7 +20,7 @@ const Home = () => {
             <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-xs ">
             <a className = {navbarStyle} onClick={() => {document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });}}>About Us </a>
             <a className = {navbarStyle} onClick={() => {document.getElementById("coaches")?.scrollIntoView({ behavior: "smooth" });}}>Coaches</a>
-            <p className = {navbarStyle}>Join Now</p>  
+            <a className = {navbarStyle} onClick={() => {document.getElementById("joinnow")?.scrollIntoView({ behavior: "smooth" });}}>Join Now</a>  
             <a className = {navbarStyle}>Members</a>
             <a className = {navbarStyle}>News</a>
             
@@ -147,7 +147,7 @@ const Home = () => {
 
     const Train = () => {
     return(
-      <div className = " text-red-700 w-fit h-dvh flex items-center flex-col justify-center ">
+      <div className = " text-red-700 w-fit h-dvh flex items-center flex-col justify-center " id="joinnow">
         <div className = "text-white text-[40px]">Train With Us</div>
         <div className = " flex text-white">
           <div className = "border m-[10px] w-[400px] rounded p-[15px] h-[300px]">

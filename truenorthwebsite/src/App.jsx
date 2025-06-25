@@ -26,7 +26,7 @@ function App() {
             <a className = {navbarStyle}>Coaches</a>
             <a className = {navbarStyle}>Members</a>
             <a className = {navbarStyle}>News</a>
-            <p className = {navbarStyle}>Contact Info</p>  
+            <p className = {navbarStyle}>Contact Us</p>  
           </div>
 
         </div>
@@ -43,35 +43,34 @@ function App() {
 
         <div className = "flex flex-row w-full justify-center mt-[30px]">
 
-          <div className = "m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
           <p className = "text-[20px]" >Eugene Wang</p>
           <p>Founder & Head Coach</p>
           <img src={IMG3} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-600">More Info</div>
+          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
           </div>
 
-          <div className = "m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
           <p className = "text-[20px]">Hongtao Chen</p>
           <p>Co-founder & Head Coach</p>
           <img src={IMG1} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-600">More Info</div>
+          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
           </div>
 
-          <div className = " m-[10px] w-1/5 h-[250px] flex flex-col items-center">
+          <div className = " m-[10px] w-1/5 h-fit flex flex-col items-center">
           <p className = "text-[20px]">Mo Zhang</p>
           <p>Head Coach</p>
           <img src={IMG2} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-600">More Info</div>
+          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
           </div>
 
-          <div className = "m-[10px] w-1/5 h-[250px] flex items-center flex-col">
+          <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
           <p className = "text-[20px]">Ye Lin</p>
           <p>Head Coach</p>
           <img src={IMG4} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[40px] w-[100px] m-[20px] flex justify-center rounded bg-red-600">More Info</div>
+          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
           </div>
         </div>
-
       </div>
     );
   }
@@ -145,9 +144,48 @@ function App() {
   
    const Train = () => {
     return(
-      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
-        <div className = "text-white text-[80px]">Train With Us</div>
+      <div className = " text-red-700 w-fit h-dvh flex items-center flex-col justify-center ">
+        <div className = "text-white text-[40px]">Train With Us</div>
+        <div className = " flex text-white">
+          <div className = "border m-[10px] w-[400px] rounded p-[15px] h-[300px]">
+            <h1 className = "text-red-600 text-[24px]">Beginner Class</h1>
+            <p className = "text-red-600">Time:</p>
+            <p>
+              Saturday 3:00-5:00pm
+              <br></br>
+              Sunday   3:00-5:00pm  
+            </p>
+            <p className = "text-red-600">Price:</p>
+            <p>Drop In: $50/session</p>
+            <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
+          </div>
 
+          <div className = "border m-[10px] w-[400px] rounded p-[15px]">
+            <h1 className = "text-red-600 text-[24px]">Adult Class</h1>
+               <p className = "text-red-600">Time:</p>
+            <p>
+              Saturday 3:00-5:00pm
+              <br></br>
+              Sunday   3:00-5:00pm
+            </p>
+            <p className = "text-red-600">Price:</p>
+            <p>Drop In: $50/session</p>
+            <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
+          </div>
+
+          <div className = "border m-[10px] w-[400px] rounded p-[15px]">
+            <h1 className = "text-red-600 text-[24px]">Competition Class</h1>
+               <p className = "text-red-600"> Time:</p>
+            <p>
+              Saturday 3:00-5:00pm
+              <br></br>
+              Sunday   3:00-5:00pm
+            </p>
+            <p className = "text-red-600">Price:</p>
+            <p>Drop In: $50/session</p>
+            <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
+          </div>
+        </div>
     
 
 
@@ -160,8 +198,8 @@ function App() {
 
    const Contact = () => {
     return(
-      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
-        <div className = "text-white text-[80px]">Contact Us</div>
+      <div className = " text-red-700 h-fit flex items-center flex-col justify-center m-[20px]">
+        <div className = "text-white text-[40px]">Contact Us</div>
 
         <div className = "text-red flex flex-col items-center text-[25px]">
           <p>Want to learn more? </p>
@@ -190,7 +228,6 @@ function App() {
       <br></br>
       <Coaches/>
       <Train/>
-      <Contact/>
 
          <Router>
           <Routes>

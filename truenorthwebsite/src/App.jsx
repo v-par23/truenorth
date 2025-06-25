@@ -22,7 +22,7 @@ function App() {
           </div>
 
           <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-xs ">
-            <a className = {navbarStyle}>About Us</a>
+            <a className = {navbarStyle} onClick={() => {document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });}} >About Us </a>
             <a className = {navbarStyle} onClick={() => {document.getElementById("coaches")?.scrollIntoView({ behavior: "smooth" });}} >Coaches</a>
             <a className = {navbarStyle}>Members</a>
             <a className = {navbarStyle}>News</a>
@@ -77,7 +77,7 @@ function App() {
 
   const AboutUs = () => {
     return(
-      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
+      <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center" >
         <div className = "text-white text-[80px]">TrueNorth Table Tennis</div>
         <div className = " text-gray-400 text-[45px] font-light">Where Champions Rise</div>
 
@@ -103,7 +103,7 @@ function App() {
   const Intro = () => {
     const text = "Home of "
     return( 
-      <div className = "h-50vh">
+      <div className = "h-50vh" id = "intro">
         <p className = "text-white text-[40px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
         <p className = "text-white text-[22px] m-top-100  flex items-center flex-row justify-center font-extralight">Home of&nbsp; <div className = "text-red-600">Champions.</div>&nbsp;Heart of the<div className = "text-red-600"> &nbsp;North.</div></p>
         

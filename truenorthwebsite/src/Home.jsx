@@ -1,10 +1,10 @@
-
 import IMG1 from "./assets/image_1.png";
 import IMG2 from "./assets/image_2.png";
 import IMG3 from "./assets/image_3.png";
 import IMG4 from "./assets/image_4.png";
 import img from "./assets/image.png";
 import Navbar from "./Navbar";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -94,28 +94,28 @@ const Home = () => {
           <p className = "text-[20px]" >Eugene Wang</p>
           <p>Founder & Head Coach</p>
           <img src={IMG3} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
+          <Link to= "/coaches/coachone" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
           </div>
 
           <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
           <p className = "text-[20px]">Hongtao Chen</p>
           <p>Co-founder & Head Coach</p>
           <img src={IMG1} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
+          <Link to= "/coaches/coachtwo" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
           </div>
 
           <div className = " m-[10px] w-1/5 h-fit flex flex-col items-center">
           <p className = "text-[20px]">Mo Zhang</p>
           <p>Head Coach</p>
           <img src={IMG4} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
+          <Link to= "/coaches/coachthree" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
           </div>
 
           <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
           <p className = "text-[20px]">Ye Lin</p>
           <p>Head Coach</p>
           <img src={IMG2} className = "w-3/4 rounded mt-[20px]"></img>
-          <div className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</div>
+          <Link to= "/coaches/coachfour" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
           </div>
         </div>
       </div>

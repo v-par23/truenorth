@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './App.css'
-import Home from "./Home";
-import Members from "./Members";
-import News from "./News";
+import Home from "./components/Home.jsx";
+import Members from "./components/Members";
+import News from "./components/News";
 import CoachOne from "./coachpages/CoachOne";
-import CoachTwo from './coachpages/CoachTwo.Jsx';
+import CoachTwo from './coachpages/CoachTwo.jsx';
 import CoachThree from './coachpages/CoachThree';
 import CoachFour from './coachpages/CoachFour';
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import LOGO from "./assets/rectangle_red_logo.png";
+import LOGO from "../assets/rectangle_red_logo.png";
 
 const Navbar = () => {
 const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-300"

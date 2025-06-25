@@ -1,8 +1,8 @@
-import IMG1 from "./assets/image_1.png";
-import IMG2 from "./assets/image_2.png";
-import IMG3 from "./assets/image_3.png";
-import IMG4 from "./assets/image_4.png";
-import img from "./assets/image.png";
+import IMG1 from "../assets/image_1.png";
+import IMG2 from "../assets/image_2.png";
+import IMG3 from "../assets/image_3.png";
+import IMG4 from "../assets/image_4.png";
+import img from "../assets/image.png";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 
@@ -188,7 +188,7 @@ const Home = () => {
         </div>
       </div>
     );
-  }
+    }
 
     return(
         <div className = " w-dvw h-fit flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
@@ -199,7 +199,6 @@ const Home = () => {
             <Train/>
             <Contact/>
         </div>
-       
     );
 }
 export default Home;

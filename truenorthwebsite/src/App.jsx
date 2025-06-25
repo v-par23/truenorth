@@ -23,7 +23,7 @@ function App() {
 
           <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-xs ">
             <a className = {navbarStyle}>About Us</a>
-            <a className = {navbarStyle}>Coaches</a>
+            <a className = {navbarStyle} onClick={() => {document.getElementById("coaches")?.scrollIntoView({ behavior: "smooth" });}} >Coaches</a>
             <a className = {navbarStyle}>Members</a>
             <a className = {navbarStyle}>News</a>
             <p className = {navbarStyle}>Contact Us</p>  

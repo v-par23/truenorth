@@ -80,7 +80,7 @@ function App() {
     return(
       <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center ">
         <div className = "text-white text-[80px]">TrueNorth Table Tennis</div>
-        <div className = " text-gray-400 text-[45px] font-extralight">Where Champions Rise</div>
+        <div className = " text-gray-400 text-[45px] font-light">Where Champions Rise</div>
 
         <div className = "text-white flex flex-col items-center mt-[20px] text-[25px] font-extralight">
           <p>Embody the spirit of a champion with resilient, </p>

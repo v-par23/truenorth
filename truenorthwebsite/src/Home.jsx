@@ -104,8 +104,8 @@ const Home = () => {
         <div className = "flex text-[40px] ">Meet Our Coaches</div>
         <p className = "text-[20px] mt-[20px] font-extralight flex flex-row">
           
-          <div className = "text-red-600">Professional</div> &nbsp; and <div className = "text-red-600"> &nbsp; experienced &nbsp;</div> coaching team from entry-level to top performance,</p>
-        <p className = "text-[20px] font-extralight flex">TrueNorth has the best coaches to meet your &nbsp;
+          <div className = "text-red-600">Professional</div>&nbsp;and<div className = "text-red-600">&nbsp;experienced&nbsp;</div> coaching team from entry-level to top performance,</p>
+        <p className = "text-[20px] font-extralight flex">TrueNorth has the best coaches to meet your&nbsp;
           
           <div className = "text-red-600">expectations.</div>
           

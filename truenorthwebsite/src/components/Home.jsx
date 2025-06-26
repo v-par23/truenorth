@@ -166,15 +166,9 @@ const Home = () => {
             <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
           </div>
         </div>
-    
-      </div>
-    );
-    }
 
-    const Contact = () => {
-    return(
+           
       <div className = " text-red-700 h-fit flex items-center flex-col justify-center m-[20px]">
-        <div className = "text-white text-[40px]">Contact Us</div>
 
         <div className = "text-red flex flex-col items-center text-[25px]">
           <p>Want to learn more? </p>
@@ -187,8 +181,13 @@ const Home = () => {
           <p>3470 Pharmacy Ave, Scarborough, ON M1W 2S7</p>
         </div>
       </div>
+    
+      </div>
     );
     }
+
+ 
+    
 
     return(
         <div className = " w-dvw h-fit flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
@@ -197,7 +196,6 @@ const Home = () => {
             <Intro/>
             <Coaches/>
             <Train/>
-            <Contact/>
         </div>
     );
 }

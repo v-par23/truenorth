@@ -137,6 +137,9 @@ const Home = () => {
             </p>
             <p className = "text-red-600">Price:</p>
             <p>Drop In: $50/session</p>
+              <br></br>
+              <br></br>
+              <br></br>
             <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
           </div>
 
@@ -144,12 +147,16 @@ const Home = () => {
             <h1 className = "text-red-600 text-[24px]">Adult Class</h1>
                <p className = "text-red-600">Time:</p>
             <p>
-              Saturday 3:00-5:00pm
+              Friday 7:00-9:00pm
               <br></br>
-              Sunday   3:00-5:00pm
+              Saturday 7:00-9:00pm
+              <br></br>
+              Sunday   7:00-9:00pm
             </p>
             <p className = "text-red-600">Price:</p>
             <p>Drop In: $50/session</p>
+              <br></br>
+              <br></br>
             <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
           </div>
 
@@ -157,12 +164,17 @@ const Home = () => {
             <h1 className = "text-red-600 text-[24px]">Competition Class</h1>
                <p className = "text-red-600"> Time:</p>
             <p>
-              Saturday 3:00-5:00pm
+              Wednesday 5:30-8:30pm
               <br></br>
-              Sunday   3:00-5:00pm
+              Saturday 9:30-12:30pm          
+              <br></br>
+              Saturday 2:30-5:30pm          
+              <br></br>
+              Sunday   9:30-12:30pm
             </p>
             <p className = "text-red-600">Price:</p>
             <p>Drop In: $50/session</p>
+             <br></br>
             <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
           </div>
         </div>

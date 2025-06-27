@@ -20,7 +20,7 @@ const Home = () => {
             <p>North and claim your rightful place at the top.</p>
             </div>
     
-            <div className = "flex flex-row mt-[40px]" id = "joinnow">
+            <div className = "flex flex-row mt-[40px]" >
             <div className = "bg-red-600 w-[150px] h-[75px] rounded flex justify-center items-center text-white m-[10px] text-2xl font-bold hover:bg-red-700">
                 Join Now
             </div>

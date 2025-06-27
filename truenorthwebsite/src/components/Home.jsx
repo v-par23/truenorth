@@ -5,6 +5,8 @@ import IMG4 from "../assets/image_4.png";
 import img from "../assets/image.png";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
+import { Phone, Mail, Instagram, MapPin } from "lucide-react";
+
 
 const Home = () => {
 
@@ -270,7 +272,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Contact Section */}
+      {/* Contact Section
       <div className="text-red-700 flex items-center flex-col justify-center text-center max-w-2xl">
         <div className="mb-6">
           <p className="text-red-600 text-xl sm:text-2xl font-semibold">Want to learn more?</p>
@@ -282,7 +284,50 @@ const Home = () => {
           <p>truenorthttc</p>
           <p className="leading-relaxed">3470 Pharmacy Ave, Scarborough, ON M1W 2S7</p>
         </div>
-      </div>
+      </div> */}
+
+  <div className="text-center mt-12">
+    <h2 className="text-3xl font-bold text-red-500 mb-6">Want to learn more?</h2>
+
+    <div className="inline-flex flex-col items-start space-y-3">
+      <a
+        href="tel:+14165257624"
+        className="flex items-center text-white hover:text-red-400 transition"
+      >
+        <Phone className="w-5 h-5 text-red-500 mr-2" /> 
+        (416) 525‑7624
+      </a>
+
+      <a
+        href="mailto:truenorthtabletennis@hotmail.com"
+        className="flex items-center text-white hover:text-red-400 transition"
+      >
+        <Mail className="w-5 h-5 text-red-500 mr-2" /> 
+        truenorthtabletennis@hotmail.com
+      </a>
+
+      <a
+        href="https://www.instagram.com/truenorthttc"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center text-white hover:text-red-400 transition"
+      >
+        <Instagram className="w-5 h-5 text-red-500 mr-2" /> 
+        @truenorthttc
+      </a>
+
+      <a
+        href="https://goo.gl/maps/your‑map‑link"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center text-white hover:text-red-400 transition"
+      >
+        <MapPin className="w-5 h-5 text-red-500 mr-2" /> 
+        3470 Pharmacy Ave, Scarborough, ON M1W 2S7
+      </a>
+    </div>
+  </div>
+
     </div>
   );
 }

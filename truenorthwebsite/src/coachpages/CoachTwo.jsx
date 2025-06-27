@@ -1,4 +1,5 @@
 import { Medal, Trophy, Target, Globe, Users, Award, Crown } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const CoachTwo = () => {
     const coachingLeadership = [
@@ -64,6 +65,7 @@ const CoachTwo = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+             <Link to = "/" className = "fixed m-[10px] border p-[5px] rounded z-50">Back</Link>
             {/* Header Section */}
             <div className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-blue-600/20"></div>

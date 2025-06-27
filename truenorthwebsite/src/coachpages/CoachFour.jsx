@@ -1,5 +1,5 @@
 import { Medal, Trophy, Globe, Crown, Star } from "lucide-react";
-
+import { Link } from 'react-router-dom'; 
 const CoachFour = () => {
   // Data arrays for each section
   const olympicGames = [
@@ -85,6 +85,7 @@ const CoachFour = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-black to-pink-900 text-white">
+       <Link to = "/" className = "fixed m-[10px] border p-[5px] rounded z-50">Back</Link>
       {/* Header */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20"></div>

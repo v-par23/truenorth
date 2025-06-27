@@ -32,11 +32,11 @@ const Home = () => {
 
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-        <button className="bg-red-600 px-6 py-4 sm:px-8 sm:py-4 rounded-lg flex justify-center items-center text-white text-lg sm:text-xl lg:text-2xl font-bold hover:bg-red-700 transition-colors duration-300 min-w-[150px] shadow-lg hover:shadow-xl transform hover:scale-105">
+        <button onClick={() => {document.getElementById("joinnow")?.scrollIntoView({ behavior: "smooth" });}} className="bg-red-600 px-6 py-4 sm:px-8 sm:py-4 rounded-lg flex justify-center items-center text-white text-lg sm:text-xl lg:text-2xl font-bold hover:bg-red-700 transition-colors duration-300 min-w-[150px] shadow-lg hover:shadow-xl transform hover:scale-105">
           Join Now
         </button>
         
-        <button className="bg-gray-800 px-6 py-4 sm:px-8 sm:py-4 rounded-lg flex justify-center items-center text-white border-2 border-gray-500 text-lg sm:text-xl lg:text-2xl font-bold hover:bg-gray-900 hover:border-gray-600 transition-all duration-300 min-w-[150px] shadow-lg hover:shadow-xl transform hover:scale-105">
+        <button onClick={() => {document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });}} className="bg-gray-800 px-6 py-4 sm:px-8 sm:py-4 rounded-lg flex justify-center items-center text-white border-2 border-gray-500 text-lg sm:text-xl lg:text-2xl font-bold hover:bg-gray-900 hover:border-gray-600 transition-all duration-300 min-w-[150px] shadow-lg hover:shadow-xl transform hover:scale-105">
           Learn More
         </button>
       </div>

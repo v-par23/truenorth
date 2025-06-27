@@ -11,7 +11,7 @@ return (
         <img src={LOGO} className = "w-[170px] rounded"></img>
         </div>
 
-        <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-xl bg-black/20">
+        <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-md bg-black/80">
         <Link to="/" className = {navbarStyle} onClick={() => {document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });}}>About Us </Link>
         <Link to="/" className = {navbarStyle} onClick={() => {document.getElementById("coaches")?.scrollIntoView({ behavior: "smooth" });}}>Coaches</Link>
         <Link to="/" className = {navbarStyle} onClick={() => {document.getElementById("joinnow")?.scrollIntoView({ behavior: "smooth" });}}>Join Now</Link>  

@@ -6,19 +6,26 @@ import img from "../assets/image.png";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Instagram, MapPin } from "lucide-react";
-
+import { motion } from "motion/react"
 
 const Home = () => {
 
      const AboutUs = () => {
   return(
-    <div className="text-red-700 w-full min-h-screen flex items-center flex-col justify-center px-4 sm:px-6 lg:px-8 py-8">
+    <motion.div className="text-red-700 w-full min-h-screen flex items-center flex-col justify-center px-4 sm:px-6 lg:px-8 py-8"
+    initial={{ clipPath: "inset(0 100% 0 0)" }}
+      whileInView={{ clipPath: "inset(0 0% 0 0)" }}
+      transition={{ duration: 2, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
       
       {/* Main Title */}
-      <div className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-center leading-tight mb-4">
-        TrueNorth Table Tennis
-      </div>
+      <motion.div className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-center leading-tight mb-4"
       
+      >
+        TrueNorth Table Tennis
+      </motion.div>
+
       {/* Subtitle */}
       <div className="text-gray-400 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-center mb-8">
         Where Champions Rise
@@ -43,7 +50,7 @@ const Home = () => {
         </button>
       </div>
 
-    </div>
+    </motion.div>
   );
 }
 
@@ -67,13 +74,15 @@ const Home = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8 mb-12 lg:mb-16">
         
         {/* Image Section */}
-        <div className="w-full lg:flex-1 max-w-md lg:max-w-xl">
+        <motion.div className="w-full lg:flex-1 max-w-md lg:max-w-xl"
+          whileHover={{scale:1.1}}
+        >
           <img 
             src={img} 
             alt="True North Table Tennis Club" 
             className="rounded-lg w-full h-auto object-cover shadow-lg" 
           />
-        </div>
+        </motion.div>
         
         {/* Text Section */}
         <div className="w-full lg:flex-1 max-w-md lg:max-w-xl text-center lg:text-left">

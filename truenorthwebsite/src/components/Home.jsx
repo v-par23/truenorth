@@ -8,196 +8,283 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-    const AboutUs = () => {
-        return(
-        <div className = " text-red-700 w-[1500px] h-dvh flex items-center flex-col justify-center" >
-            <div className = "text-white text-[80px]">TrueNorth Table Tennis</div>
-            <div className = " text-gray-400 text-[45px] font-light">Where Champions Rise</div>
-    
-            <div className = "text-white flex flex-col items-center mt-[20px] text-[25px] font-extralight">
-            <p>Embody the spirit of a champion with resilient, </p>
-            <p>fearless, and unstoppable training. Join the King of the</p>
-            <p>North and claim your rightful place at the top.</p>
-            </div>
-    
-            <div className = "flex flex-row mt-[40px]" >
-            <div className = "bg-red-600 w-[150px] h-[75px] rounded flex justify-center items-center text-white m-[10px] text-2xl font-bold hover:bg-red-700">
-                Join Now
-            </div>
-            <div className = "bg-gray-800 w-[150px] h-[75px] rounded flex justify-center items-center text-white m-[10px] border-2 border-gray-500 text-2xl font-bold hover:bg-gray-900 hover:border-gray-600">
-                Learn More
-            </div>
-            </div>
-    
-        </div>
-        );
-    }
+     const AboutUs = () => {
+  return(
+    <div className="text-red-700 w-full min-h-screen flex items-center flex-col justify-center px-4 sm:px-6 lg:px-8 py-8">
+      
+      {/* Main Title */}
+      <div className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-center leading-tight mb-4">
+        TrueNorth Table Tennis
+      </div>
+      
+      {/* Subtitle */}
+      <div className="text-gray-400 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-center mb-8">
+        Where Champions Rise
+      </div>
+
+      {/* Description */}
+      <div className="text-white text-center max-w-4xl mb-10">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-extralight leading-relaxed">
+          Embody the spirit of a champion with resilient, fearless, and unstoppable training. 
+          Join the King of the North and claim your rightful place at the top.
+        </p>
+      </div>
+
+      {/* Action Buttons */}
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+        <button className="bg-red-600 px-6 py-4 sm:px-8 sm:py-4 rounded-lg flex justify-center items-center text-white text-lg sm:text-xl lg:text-2xl font-bold hover:bg-red-700 transition-colors duration-300 min-w-[150px] shadow-lg hover:shadow-xl transform hover:scale-105">
+          Join Now
+        </button>
+        
+        <button className="bg-gray-800 px-6 py-4 sm:px-8 sm:py-4 rounded-lg flex justify-center items-center text-white border-2 border-gray-500 text-lg sm:text-xl lg:text-2xl font-bold hover:bg-gray-900 hover:border-gray-600 transition-all duration-300 min-w-[150px] shadow-lg hover:shadow-xl transform hover:scale-105">
+          Learn More
+        </button>
+      </div>
+
+    </div>
+  );
+}
 
     const Intro = () => {
-    const text = "Home of "
-    return( 
-      <div className = "h-dvh flex justify-center flex-col " id = "intro">
-        <p className = "text-white text-[40px] m-top-50 flex items-center flex-col justify-center">Welcome to Toronto's Premier Table Tennis Destination</p>
-        <p className = "text-white text-[22px] m-top-100  flex items-center flex-row justify-center font-extralight">Home of&nbsp; <div className = "text-red-600">Champions.</div>&nbsp;Heart of the<div className = "text-red-600"> &nbsp;North.</div></p>
+  return( 
+    <div className="min-h-screen flex justify-center flex-col px-4 sm:px-6 lg:px-8 py-8" id="intro">
+      
+      {/* Welcome Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+          Welcome to Toronto's Premier Table Tennis Destination
+        </h1>
         
-        <div className = "flex flex-row items-center justify-center mt-[40px]">
-        <div className="flex-1 max-w-xl right" >
-          <img src={img} alt="True North Table Tennis Club" className="rounded-lg w-w-xl" />
+        <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-4 font-extralight">
+          Home of <span className="text-red-600">Champions.</span> Heart of the 
+          <span className="text-red-600"> North.</span>
+        </p>
+      </div>
+      
+      {/* Main Content Section */}
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8 mb-12 lg:mb-16">
+        
+        {/* Image Section */}
+        <div className="w-full lg:flex-1 max-w-md lg:max-w-xl">
+          <img 
+            src={img} 
+            alt="True North Table Tennis Club" 
+            className="rounded-lg w-full h-auto object-cover shadow-lg" 
+          />
         </div>
-        <div className="flex-1 max-w-xl text-left ml-[20px]">
-          <p className="text-white text-[18px] text-lg leading-relaxed">
-                        At True North Table Tennis Club, our name represents more than a place. It stands for leadership, resilience, and the spirit of a champion.
-            “True North” is the King of the North, a force powered by discipline, skill, and unwavering passion.
-            <br /><br />
+        
+        {/* Text Section */}
+        <div className="w-full lg:flex-1 max-w-md lg:max-w-xl text-center lg:text-left">
+          <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed font-light">
+            At True North Table Tennis Club, our name represents more than a place. It stands for leadership, resilience, and the spirit of a champion.
+            "True North" is the King of the North, a force powered by discipline, skill, and unwavering passion.
+          </p>
+          <br />
+          <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed font-light">
             We train every player to rise with courage, heart, and relentless dedication, both on and off the table.
             Welcome to True North, where champions rise and the King of the North is born.
           </p>
         </div>
-        </div>
-        
-        
-        <div className="w-[1260px] mx-auto flex flex-wrap justify-center items-start gap-20 mt-16">
+      </div>
+      
+      {/* Features Section */}
+      <div className="w-full max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {[
             "Elite Coaching Team",
-            "State-of-the-Art Facilities",
+            "State-of-the-Art Facilities", 
             "Tailored Programs for All Levels",
             "Community and Competition",
           ].map((label) => (
-            <div key={label} className="flex flex-col">
-              <div className="w-12 border-t-2 border-red-600 mb-2"></div>
-              <p className="text-white text-[18px] font-extralight">{label}</p>
+            <div key={label} className="flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="w-12 border-t-2 border-red-600 mb-3"></div>
+              <p className="text-white text-sm sm:text-base md:text-lg font-extralight leading-relaxed">
+                {label}
+              </p>
             </div>
           ))}
         </div>
-
- 
       </div>
-    );
-    }
+    </div>
+  );
+}
     
     const Coaches = () => {
-    return(
-      <div className = "text-white w-9/10 flex justify-center items-center flex-col h-dvh" id="coaches">
-        <div className = "flex text-[40px] ">Meet Our Coaches</div>
-        <p className = "text-[20px] mt-[20px] font-extralight flex flex-row">
-          
-          <div className = "text-red-600">Professional</div>&nbsp;and<div className = "text-red-600">&nbsp;experienced&nbsp;</div> coaching team from entry-level to top performance,</p>
-        <p className = "text-[20px] font-extralight flex">TrueNorth has the best coaches to meet your&nbsp;
-          
-          <div className = "text-red-600">expectations.</div>
-          
-          </p>
+  return(
+    <div className="text-white w-full px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col min-h-screen py-8" id="coaches">
+      {/* Header Section */}
+      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6">
+        Meet Our Coaches
+      </div>
+      
+      {/* Description Section */}
+      <div className="text-center max-w-4xl mb-8">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-extralight mb-2">
+          <span className="text-red-600">Professional</span> and 
+          <span className="text-red-600"> experienced </span> 
+          coaching team from entry-level to top performance,
+        </p>
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-extralight">
+          TrueNorth has the best coaches to meet your 
+          <span className="text-red-600"> expectations.</span>
+        </p>
+      </div>
 
-        <div className = "flex flex-row w-full justify-center mt-[30px]">
-
-          <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
-          <p className = "text-[20px]" >Eugene Wang</p>
-          <p>Founder & Head Coach</p>
-          <img src={IMG3} className = "w-3/4 rounded mt-[20px]"></img>
-          <Link to= "/coaches/coachone" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
+      {/* Coaches Grid */}
+      <div className="w-full max-w-7xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          
+          {/* Coach 1 */}
+          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+            <h3 className="text-lg sm:text-xl font-semibold mb-1">Eugene Wang</h3>
+            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Founder & Head Coach</p>
+            <img src={IMG3} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Eugene Wang"/>
+            <Link 
+              to="/coaches/coachone" 
+              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+            >
+              More Info
+            </Link>
           </div>
 
-          <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
-          <p className = "text-[20px]">Hongtao Chen</p>
-          <p>Co-founder & Head Coach</p>
-          <img src={IMG1} className = "w-3/4 rounded mt-[20px]"></img>
-          <Link to= "/coaches/coachtwo" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
+          {/* Coach 2 */}
+          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+            <h3 className="text-lg sm:text-xl font-semibold mb-1">Hongtao Chen</h3>
+            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Co-founder & Head Coach</p>
+            <img src={IMG1} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Hongtao Chen"/>
+            <Link 
+              to="/coaches/coachtwo" 
+              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+            >
+              More Info
+            </Link>
           </div>
 
-          <div className = " m-[10px] w-1/5 h-fit flex flex-col items-center">
-          <p className = "text-[20px]">Mo Zhang</p>
-          <p>Head Coach</p>
-          <img src={IMG4} className = "w-3/4 rounded mt-[20px]"></img>
-          <Link to= "/coaches/coachthree" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
+          {/* Coach 3 */}
+          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+            <h3 className="text-lg sm:text-xl font-semibold mb-1">Mo Zhang</h3>
+            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Head Coach</p>
+            <img src={IMG4} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Mo Zhang"/>
+            <Link 
+              to="/coaches/coachthree" 
+              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+            >
+              More Info
+            </Link>
           </div>
 
-          <div className = "m-[10px] w-1/5 h-fit flex items-center flex-col">
-          <p className = "text-[20px]">Ye Lin</p>
-          <p>Head Coach</p>
-          <img src={IMG2} className = "w-3/4 rounded mt-[20px]"></img>
-          <Link to= "/coaches/coachfour" className = " h-[50px] w-[100px] m-[20px] flex justify-center rounded bg-red-600 items-center font-bold">More Info</Link>
+          {/* Coach 4 */}
+          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+            <h3 className="text-lg sm:text-xl font-semibold mb-1">Ye Lin</h3>
+            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Head Coach</p>
+            <img src={IMG2} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Ye Lin"/>
+            <Link 
+              to="/coaches/coachfour" 
+              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+            >
+              More Info
+            </Link>
           </div>
         </div>
       </div>
-    );
-    }
+    </div>
+  );
+}
 
     const Train = () => {
-    return(
-      <div className = " text-red-700 w-fit h-dvh flex items-center flex-col justify-center " id="joinnow">
-        <div className = "text-white text-[40px]">Train With Us</div>
-        <div className = " flex text-white">
-          <div className = "border m-[10px] w-[400px] rounded p-[15px] h-[300px]">
-            <h1 className = "text-red-600 text-[24px]">Beginner Class</h1>
-            <p className = "text-red-600">Time:</p>
-            <p>
-              Saturday 3:00-5:00pm
-              <br></br>
-              Sunday   3:00-5:00pm  
-            </p>
-            <p className = "text-red-600">Price:</p>
-            <p>Drop In: $50/session</p>
-              <br></br>
-              <br></br>
-              <br></br>
-            <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
+  return(
+    <div className="text-red-700 w-full min-h-screen flex items-center flex-col justify-center px-4 sm:px-6 lg:px-8 py-8" id="joinnow">
+      
+      {/* Header */}
+      <div className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
+        Train With Us
+      </div>
+      
+      {/* Classes Grid */}
+      <div className="w-full max-w-7xl mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+          
+          {/* Beginner Class */}
+          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors">
+            <h1 className="text-red-600 text-xl sm:text-2xl font-bold mb-4">Beginner Class</h1>
+            
+            <div className="mb-4">
+              <p className="text-red-600 font-semibold mb-2">Time:</p>
+              <p className="text-white text-sm sm:text-base leading-relaxed">
+                Saturday 3:00-5:00pm<br/>
+                Sunday 3:00-5:00pm
+              </p>
+            </div>
+            
+            <div className="mb-6">
+              <p className="text-red-600 font-semibold mb-2">Price:</p>
+              <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
+            </div>
+            
+            <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
           </div>
 
-          <div className = "border m-[10px] w-[400px] rounded p-[15px]">
-            <h1 className = "text-red-600 text-[24px]">Adult Class</h1>
-               <p className = "text-red-600">Time:</p>
-            <p>
-              Friday 7:00-9:00pm
-              <br></br>
-              Saturday 7:00-9:00pm
-              <br></br>
-              Sunday   7:00-9:00pm
-            </p>
-            <p className = "text-red-600">Price:</p>
-            <p>Drop In: $50/session</p>
-              <br></br>
-              <br></br>
-            <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
+          {/* Adult Class */}
+          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors">
+            <h1 className="text-red-600 text-xl sm:text-2xl font-bold mb-4">Adult Class</h1>
+            
+            <div className="mb-4">
+              <p className="text-red-600 font-semibold mb-2">Time:</p>
+              <p className="text-white text-sm sm:text-base leading-relaxed">
+                Friday 7:00-9:00pm<br/>
+                Saturday 7:00-9:00pm<br/>
+                Sunday 7:00-9:00pm
+              </p>
+            </div>
+            
+            <div className="mb-6">
+              <p className="text-red-600 font-semibold mb-2">Price:</p>
+              <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
+            </div>
+            
+            <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
           </div>
 
-          <div className = "border m-[10px] w-[400px] rounded p-[15px]">
-            <h1 className = "text-red-600 text-[24px]">Competition Class</h1>
-               <p className = "text-red-600"> Time:</p>
-            <p>
-              Wednesday 5:30-8:30pm
-              <br></br>
-              Saturday 9:30-12:30pm          
-              <br></br>
-              Saturday 2:30-5:30pm          
-              <br></br>
-              Sunday   9:30-12:30pm
-            </p>
-            <p className = "text-red-600">Price:</p>
-            <p>Drop In: $50/session</p>
-             <br></br>
-            <p className = "text-red-600 text-[20px]">Limited Spots Available</p>
+          {/* Competition Class */}
+          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors md:col-span-2 xl:col-span-1">
+            <h1 className="text-red-600 text-xl sm:text-2xl font-bold mb-4">Competition Class</h1>
+            
+            <div className="mb-4">
+              <p className="text-red-600 font-semibold mb-2">Time:</p>
+              <p className="text-white text-sm sm:text-base leading-relaxed">
+                Wednesday 5:30-8:30pm<br/>
+                Saturday 9:30-12:30pm<br/>
+                Saturday 2:30-5:30pm<br/>
+                Sunday 9:30-12:30pm
+              </p>
+            </div>
+            
+            <div className="mb-6">
+              <p className="text-red-600 font-semibold mb-2">Price:</p>
+              <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
+            </div>
+            
+            <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
           </div>
         </div>
+      </div>
 
-           
-      <div className = " text-red-700 h-fit flex items-center flex-col justify-center m-[20px]">
-
-        <div className = "text-red flex flex-col items-center text-[25px]">
-          <p>Want to learn more? </p>
+      {/* Contact Section */}
+      <div className="text-red-700 flex items-center flex-col justify-center text-center max-w-2xl">
+        <div className="mb-6">
+          <p className="text-red-600 text-xl sm:text-2xl font-semibold">Want to learn more?</p>
         </div>
 
-        <div className = "text-white flex flex-col items-center mt-[20px] text-[18px]">
-          <p>(416) 525-7624 </p>
-          <p>truenorthtabletennis@hotmail.com</p>
+        <div className="text-white space-y-2 text-sm sm:text-base md:text-lg">
+          <p className="font-semibold">(416) 525-7624</p>
+          <p className="break-all">truenorthtabletennis@hotmail.com</p>
           <p>truenorthttc</p>
-          <p>3470 Pharmacy Ave, Scarborough, ON M1W 2S7</p>
+          <p className="leading-relaxed">3470 Pharmacy Ave, Scarborough, ON M1W 2S7</p>
         </div>
       </div>
-    
-      </div>
-    );
-    }
-
+    </div>
+  );
+}
  
     
 

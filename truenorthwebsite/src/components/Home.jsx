@@ -220,7 +220,8 @@ const Home = () => {
               <p className="text-red-600 font-semibold mb-2">Price:</p>
               <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
             </div>
-            
+            <br></br>
+            <br></br>            
             <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
           </div>
 
@@ -241,7 +242,7 @@ const Home = () => {
               <p className="text-red-600 font-semibold mb-2">Price:</p>
               <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
             </div>
-            
+            <br></br>
             <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
           </div>
 

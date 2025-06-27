@@ -94,7 +94,7 @@ const CoachFour = () => {
               Ye Lin
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 font-light">
-              Elite Table Tennis Athlete
+              Elite Table Tennis Athlete & Coach
             </p>
             <div className="mt-8 flex justify-center">
               <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>

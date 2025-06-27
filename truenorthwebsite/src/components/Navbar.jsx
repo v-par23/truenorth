@@ -47,7 +47,7 @@ return (
         <img src={LOGO} className = "w-[170px] rounded"></img>
         </div>
 
-        <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-md bg-black/80">
+        <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-md bg-black/50">
         <Link to="/" className = {navbarStyle} onClick={handleGoToIntro}>About Us </Link>
         <Link to="/" className = {navbarStyle} onClick={handleGoToCoaches}>Coaches</Link>
         <Link to="/" className = {navbarStyle} onClick={handleGoToJoinNow}>Join Now</Link>  

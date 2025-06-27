@@ -12,16 +12,16 @@ import ScrollToTop from './components/scroll.jsx';
 function App() {  
   return (
     <div >
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/members" element={<Members/>}/>
-          <Route path="/news" element={<News/>}/>
-          <Route path="/coaches/coachone" element={<CoachOne/>}/>
-          <Route path="/coaches/coachtwo" element={<CoachTwo/>}/>
-          <Route path="/coaches/coachthree" element={<CoachThree/>}/>
-          <Route path="/coaches/coachfour" element={<CoachFour/>}/>
-        </Routes>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/members" element={<Members/>}/>
+            <Route path="/news" element={<News/>}/>
+            <Route path="/coaches/coachone" element={<CoachOne/>}/>
+            <Route path="/coaches/coachtwo" element={<CoachTwo/>}/>
+            <Route path="/coaches/coachthree" element={<CoachThree/>}/>
+            <Route path="/coaches/coachfour" element={<CoachFour/>}/>
+          </Routes>
     </div>
   )
 }

@@ -341,6 +341,9 @@ const Home = () => {
             <Intro/>
             <Coaches/>
             <Train/>
+            <footer className="w-full text-center py-6 mt-12 text-gray-400 text-sm border-t border-gray-700 bg-black/30">
+                &copy; {new Date().getFullYear()} TrueNorth Table Tennis Club™. All rights reserved.
+            </footer>
         </div>
     );
 }

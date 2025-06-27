@@ -1,187 +1,72 @@
-// import { Link } from 'react-router-dom';
-// import LOGO from "../assets/rectangle_red_logo.png";
-
-// const Navbar = () => {
-// const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-300"
-// return (
-
-//     <div className = "flex justify-center m-[5px] mt-[40px] rounded w-3/4 h-fit items-center fixed ">
-
-//         <div className = "w-1/2  m-[5px]">
-//         <img src={LOGO} className = "w-[170px] rounded"></img>
-//         </div>
-
-//         <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-md bg-black/80">
-//         <Link to="/" className = {navbarStyle} onClick={() => {document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });}}>About Us </Link>
-//         <Link to="/" className = {navbarStyle} onClick={() => {document.getElementById("coaches")?.scrollIntoView({ behavior: "smooth" });}}>Coaches</Link>
-//         <Link to="/" className = {navbarStyle} onClick={() => {document.getElementById("joinnow")?.scrollIntoView({ behavior: "smooth" });}}>Join Now</Link>  
-//         <Link to="/members" className = {navbarStyle}>Members</Link>
-//         <Link to="/news" className = {navbarStyle}>News</Link>
-        
-//         </div>
-
-//     </div>
-    
-// );
-// }
-
-// export default Navbar;
-
-
-
-
-
-
-
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Link } from 'react-router-dom';
 import LOGO from "../assets/rectangle_red_logo.png";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+    const navbarStyle = "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-300"
 
-  // untouched
-  const navbarStyle =
-    "rounded mr-[10px] ml-[10px] m-[5px] p-[4px] w-fit text-white hover:text-gray-300";
+  const handleGoToIntro = () => {
+    navigate('/'); // Navigate to homepage
 
-  return (
-    <div
-      className="
-        fixed top-0 left-1/2 transform -translate-x-1/2
-        flex justify-center         /* center on small */
-        md:justify-center          /* same for now */
-        m-[5px] mt-[40px] rounded
-        w-full md:w-3/4 h-fit items-center
-        px-4 bg-transparent z-50
-      "
-    >
-      {/* logo */}
-      <div className="w-1/2 m-[5px]">
-        <img src={LOGO} className="w-[170px] rounded" alt="Logo" />
-      </div>
+    setTimeout(() => {
+      const el = document.getElementById("intro");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Small delay to ensure page renders
+  };
 
-      {/* Desktop: no wrap + tighter to logo */}
-      <div
-        className="
-          hidden md:flex
-          h-fit flex-nowrap           /* KEEP ALL LINKS ON ONE ROW */
-          justify-end
-          my-[7px] mx-0              /* remove horizontal margin */
-          border-red-600 border-2 rounded font-bold
-          whitespace-nowrap
-          backdrop-blur-md bg-black/80
-        "
-      >
-        <Link
-          to="/"
-          className={navbarStyle}
-          onClick={() =>
-            document
-              .getElementById("intro")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          About Us
-        </Link>
-        <Link
-          to="/"
-          className={navbarStyle}
-          onClick={() =>
-            document
-              .getElementById("coaches")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          Coaches
-        </Link>
-        <Link
-          to="/"
-          className={navbarStyle}
-          onClick={() =>
-            document
-              .getElementById("joinnow")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          Join Now
-        </Link>
-        <Link to="/members" className={navbarStyle}>
-          Members
-        </Link>
-        <Link to="/news" className={navbarStyle}>
-          News
-        </Link>
-      </div>
+  const handleGoToCoaches = () => {
+    navigate('/'); // Navigate to homepage
+    setTimeout(() => {
+      const el = document.getElementById("coaches");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Small delay to ensure page renders
+  };
 
-      {/* Mobile hamburger (unchanged) */}
-      <button
-        className="md:hidden ml-auto text-white"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-      </button>
+  const handleGoToJoinNow = () => {
+    navigate('/'); // Navigate to homepage
+    setTimeout(() => {
+      const el = document.getElementById("joinnow");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Small delay to ensure page renders 
+}
 
-      {/* Mobile dropdown (unchanged) */}
-      {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-black/80 border-t border-red-600 backdrop-blur-md flex flex-col items-center md:hidden">
-          <Link
-            to="/"
-            className={navbarStyle + " block w-full text-center"}
-            onClick={() => {
-              setIsOpen(false);
-              document
-                .getElementById("intro")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            About Us
-          </Link>
-          <Link
-            to="/"
-            className={navbarStyle + " block w-full text-center"}
-            onClick={() => {
-              setIsOpen(false);
-              document
-                .getElementById("coaches")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Coaches
-          </Link>
-          <Link
-            to="/"
-            className={navbarStyle + " block w-full text-center"}
-            onClick={() => {
-              setIsOpen(false);
-              document
-                .getElementById("joinnow")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Join Now
-          </Link>
-          <Link
-            to="/members"
-            className={navbarStyle + " block w-full text-center"}
-            onClick={() => setIsOpen(false)}
-          >
-            Members
-          </Link>
-          <Link
-            to="/news"
-            className={navbarStyle + " block w-full text-center"}
-            onClick={() => setIsOpen(false)}
-          >
-            News
-          </Link>
+return (
+
+    <div className = "flex justify-center m-[5px] mt-[40px] rounded w-3/4 h-fit items-center fixed ">
+
+        <div className = "w-1/2  m-[5px]">
+        <img src={LOGO} className = "w-[170px] rounded"></img>
         </div>
-      )}
+
+        <div className = "w-fit h-fit flex justify-end m-[7px] border-red-600 border-2 rounded font-bold whitespace-nowrap backdrop-blur-md bg-black/80">
+        <Link to="/" className = {navbarStyle} onClick={handleGoToIntro}>About Us </Link>
+        <Link to="/" className = {navbarStyle} onClick={handleGoToCoaches}>Coaches</Link>
+        <Link to="/" className = {navbarStyle} onClick={handleGoToJoinNow}>Join Now</Link>  
+        <Link to="/members" className = {navbarStyle}>Members</Link>
+        <Link to="/news" className = {navbarStyle}>News</Link>
+        
+        </div>
+
     </div>
-  );
-};
+    
+);
+}
 
 export default Navbar;
+
+
+
+
+
+
+
 
 
 

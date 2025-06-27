@@ -7,12 +7,12 @@ import CoachOne from "./coachpages/CoachOne";
 import CoachTwo from './coachpages/CoachTwo.jsx';
 import CoachThree from './coachpages/CoachThree';
 import CoachFour from './coachpages/CoachFour';
-import ScrollToHashElement from './components/scroll.jsx';
+import ScrollToTop from './components/scroll.jsx';
 
 function App() {  
   return (
     <div >
-          <ScrollToHashElement />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/members" element={<Members/>}/>

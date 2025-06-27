@@ -6,17 +6,22 @@ import img from "../assets/image.png";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Instagram, MapPin } from "lucide-react";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [aboutUsAnimated, setAboutUsAnimated] = useState(false);
+
+    useEffect(() => {
+      setAboutUsAnimated(true);
+  }, []);
 
      const AboutUs = () => {
   return(
     <motion.div className="text-red-700 w-full min-h-screen flex items-center flex-col justify-center px-4 sm:px-6 lg:px-8 py-8"
     initial={{ clipPath: "inset(0 100% 0 0)" }}
-      whileInView={{ clipPath: "inset(0 0% 0 0)" }}
+      animate={aboutUsAnimated ? { clipPath: "inset(0 0% 0 0)" } : {}}
       transition={{ duration: 2, ease: "easeOut" }}
-      viewport={{ once: true }}
     >
       
       {/* Main Title */}

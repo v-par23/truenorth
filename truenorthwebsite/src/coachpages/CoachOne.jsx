@@ -41,9 +41,6 @@ const CoachOne = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
-      <Link to="/" className="fixed m-[10px] border p-[5px] rounded z-50 backdrop-blur-md">
-        Back
-      </Link>
 
       {/* Header */}
       <div className="relative overflow-hidden">

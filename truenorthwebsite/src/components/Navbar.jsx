@@ -43,7 +43,7 @@ return (
     <motion.div className = "flex justify-center m-[5px] mt-[40px] rounded w-3/4 h-fit items-center fixed z-2"
     >
 
-        <div className = "w-1/2  m-[5px]">
+        <div className = "w-1/2">
         <img src={LOGO} className = "w-[170px] rounded"></img>
         </div>
 

@@ -1,23 +1,23 @@
-import { Scroll } from "lucide-react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const ScrollToHashElement = () => {
+const ScrollToTop = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      // Wait for the DOM to load
-      setTimeout(() => {
-        const id = location.hash.replace("#", "");
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 0); // You can increase this if content is async
+    const savedPos = sessionStorage.getItem(`scroll-${location.pathname}`);
+    if (savedPos) {
+      window.scrollTo(0, parseInt(savedPos));
+    } else {
+      window.scrollTo(0, 0);
     }
+
+    return () => {
+      sessionStorage.setItem(`scroll-${location.pathname}`, window.scrollY);
+    };
   }, [location]);
 
   return null;
 };
-export default ScrollToHashElement;
+
+export default ScrollToTop;

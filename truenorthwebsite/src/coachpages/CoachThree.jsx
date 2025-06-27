@@ -222,7 +222,7 @@ const CoachThree = () => {
                 <section>
                     <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/30 rounded-2xl p-8 border border-gray-600">
                         <h3 className="text-2xl font-bold text-center mb-6 text-gray-200">Career Highlights</h3>
-                        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                             <div className="space-y-2">
                                 <div className="text-3xl font-bold text-yellow-400">3</div>
                                 <div className="text-gray-300 text-sm">Pan Am Gold</div>
@@ -238,10 +238,6 @@ const CoachThree = () => {
                             <div className="space-y-2">
                                 <div className="text-3xl font-bold text-blue-400">4</div>
                                 <div className="text-gray-300 text-sm">N.A. Titles</div>
-                            </div>
-                            <div className="space-y-2">
-                                <div className="text-3xl font-bold text-green-400">18+</div>
-                                <div className="text-gray-300 text-sm">Years Active</div>
                             </div>
                         </div>
                     </div>

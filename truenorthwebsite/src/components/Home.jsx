@@ -272,20 +272,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Contact Section
-      <div className="text-red-700 flex items-center flex-col justify-center text-center max-w-2xl">
-        <div className="mb-6">
-          <p className="text-red-600 text-xl sm:text-2xl font-semibold">Want to learn more?</p>
-        </div>
-
-        <div className="text-white space-y-2 text-sm sm:text-base md:text-lg">
-          <p className="font-semibold">(416) 525-7624</p>
-          <p className="break-all">truenorthtabletennis@hotmail.com</p>
-          <p>truenorthttc</p>
-          <p className="leading-relaxed">3470 Pharmacy Ave, Scarborough, ON M1W 2S7</p>
-        </div>
-      </div> */}
-
   <div className="text-center mt-12">
     <h2 className="text-3xl font-bold text-red-500 mb-6">Want to learn more?</h2>
 

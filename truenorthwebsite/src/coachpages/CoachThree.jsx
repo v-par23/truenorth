@@ -95,7 +95,7 @@ const CoachThree = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20"></div>
                 <div className="relative px-6 py-16 text-center">
                     <div className="max-w-4xl mx-auto">
-                        <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent leading-normal">
                             Mo Zhang
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-300 font-light">
@@ -111,7 +111,7 @@ const CoachThree = () => {
             <div className="max-w-6xl mx-auto px-6 pb-16">
                 {/* Pan American Games Section */}
                 <section className="mb-16">
-                    <div className="flex items-center mb-8">
+                    <div className="flex items-center mb-8 mt-[20px]">
                         <Target className="w-8 h-8 text-purple-500 mr-4" />
                         <h2 className="text-3xl md:text-4xl font-bold">Pan American Games</h2>
                     </div>

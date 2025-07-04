@@ -47,7 +47,7 @@ const CoachOne = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-blue-600/20"></div>
         <div className="relative px-6 py-16 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent leading-normal">
               Eugene Wang
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 font-light">
@@ -63,7 +63,7 @@ const CoachOne = () => {
       <div className="max-w-6xl mx-auto px-6 pb-16">
         {/* Olympic Games */}
         <section className="mb-16">
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-8 mt-[20px]">
             <Target className="w-8 h-8 text-red-500 mr-4" />
             <h2 className="text-3xl md:text-4xl font-bold">Olympic Games Participation</h2>
           </div>

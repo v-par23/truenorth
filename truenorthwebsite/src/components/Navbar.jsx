@@ -57,7 +57,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger on small */}
-        <div className="md:hidden flex flex-col justify-center items-center ml-4 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+        <div className="md:hidden flex flex-col justify-center items-center ml-4 cursor-pointer border" onClick={() => setIsOpen(!isOpen)}>
           <div className={`w-6 h-0.5 bg-white mb-1 transition-transform ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`}></div>
           <div className={`w-6 h-0.5 bg-white mb-1 ${isOpen ? 'opacity-0' : ''}`}></div>
           <div className={`w-6 h-0.5 bg-white transition-transform ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></div>
@@ -67,11 +67,13 @@ const Navbar = () => {
       {/* Dropdown menu */}
       {isOpen && (
         <div className="absolute top-full right-8 mt-2 border-red-600 border-2 rounded backdrop-blur-md bg-black/50 p-4 flex flex-col items-end z-30 w-35">
+          <div className = "flex justify-center flex-col ">
           <Link to="/" className={navbarStyle} onClick={handleGoToIntro}>About Us</Link>
           <Link to="/" className={navbarStyle} onClick={handleGoToCoaches}>Coaches</Link>
           <Link to="/" className={navbarStyle} onClick={handleGoToJoinNow}>Join Now</Link>
           <Link to="/members" className={navbarStyle} onClick={() => setIsOpen(false)}>Members</Link>
           <Link to="/news" className={navbarStyle} onClick={() => setIsOpen(false)}>News</Link>
+          </div>
         </div>
       )}
     </motion.div>

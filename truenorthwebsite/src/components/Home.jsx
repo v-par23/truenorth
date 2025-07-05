@@ -59,9 +59,9 @@ const Home = () => {
   );
 }
 
-    const Intro = () => {
+  const Intro = () => {
   return( 
-    <div className="min-h-screen flex justify-center flex-col px-4 sm:px-6 lg:px-8 py-8" id="intro">
+    <div className="min-h-screen flex justify-center flex-col px-4 sm:px-6 lg:px-8 py-8 mb-[250px] md:mb-0" id="intro">
       
       {/* Welcome Header */}
       <div className="text-center mb-8">
@@ -127,7 +127,7 @@ const Home = () => {
     
     const Coaches = () => {
   return(
-    <div className="text-white w-full px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col min-h-screen py-8" id="coaches">
+    <div className="text-white w-full px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col min-h-screen py-8 scroll-mt-[120px] md:scroll-mt-0 mb-[250px] md:mb-0" id="coaches">
       {/* Header Section */}
       <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6">
         Meet Our Coaches
@@ -209,7 +209,7 @@ const Home = () => {
 
     const Train = () => {
   return(
-    <div className="text-red-700 w-full min-h-screen flex items-center flex-col justify-center px-4 sm:px-6 lg:px-8 py-8" id="joinnow">
+    <div className="text-red-700 w-full min-h-screen flex items-center flex-col justify-center px-4 sm:px-6 lg:px-8 py-8 scroll-mt-[120px] md:scroll-mt-0" id="joinnow">
       
       {/* Header */}
       <div className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
@@ -286,7 +286,7 @@ const Home = () => {
         </div>
       </div>
 
-  <div className="text-center mt-12">
+  <div className="text-center mt-12 ">
     <h2 className="text-3xl font-bold text-red-500 mb-6">Want to learn more?</h2>
 
     <div className="inline-flex flex-col items-start space-y-3">

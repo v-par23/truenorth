@@ -3,7 +3,10 @@ import { motion } from "motion/react";
 
 const Members = () => {
     return (
-        <div className="w-dvw h-dvh flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900">
+        <motion.div 
+            className="w-dvw h-dvh flex flex-col items-center bg-gradient-to-br via-black from-red-900 to-red-900"
+         
+            >
             <Navbar />
             <div className="flex flex-1 flex-col justify-center items-center w-full">
                 <motion.div
@@ -43,7 +46,7 @@ const Members = () => {
                     </svg>
                 </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

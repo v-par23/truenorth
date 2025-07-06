@@ -317,7 +317,7 @@ const Home = () => {
       </a>
 
       <a
-        href="https://goo.gl/maps/your‑map‑link"
+        href="https://g.co/kgs/Pukix6w"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center text-white hover:text-red-400 transition"

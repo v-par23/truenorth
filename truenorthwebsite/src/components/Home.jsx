@@ -151,7 +151,8 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           
           {/* Coach 1 */}
-          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+          <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.1}}>
             <h3 className="text-lg sm:text-xl font-semibold mb-1">Eugene Wang</h3>
             <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Founder & Head Coach</p>
             <img src={IMG3} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Eugene Wang"/>
@@ -161,10 +162,11 @@ const Home = () => {
             >
               More Info
             </Link>
-          </div>
+          </motion.div>
 
           {/* Coach 2 */}
-          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+          <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.1}}>
             <h3 className="text-lg sm:text-xl font-semibold mb-1">Hongtao Chen</h3>
             <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Co-founder & Head Coach</p>
             <img src={IMG1} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Hongtao Chen"/>
@@ -174,10 +176,11 @@ const Home = () => {
             >
               More Info
             </Link>
-          </div>
+          </motion.div>
 
           {/* Coach 3 */}
-          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+          <motion.div className="flex items-center flex-col p-4 rounded-lg  transition-colors"
+          whileHover={{scale:1.1}}>
             <h3 className="text-lg sm:text-xl font-semibold mb-1">Mo Zhang</h3>
             <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Head Coach</p>
             <img src={IMG4} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Mo Zhang"/>
@@ -187,10 +190,12 @@ const Home = () => {
             >
               More Info
             </Link>
-          </div>
+          </motion.div>
 
           {/* Coach 4 */}
-          <div className="flex items-center flex-col bg-gray-800/20 p-4 rounded-lg hover:bg-gray-800/40 transition-colors">
+          <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors
+          "
+          whileHover={{scale:1.1}}>
             <h3 className="text-lg sm:text-xl font-semibold mb-1">Ye Lin</h3>
             <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Head Coach</p>
             <img src={IMG2} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Ye Lin"/>
@@ -200,7 +205,7 @@ const Home = () => {
             >
               More Info
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

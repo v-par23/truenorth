@@ -4,8 +4,8 @@ import Members from "./components/Members";
 import News from "./components/News";
 import CoachOne from "./coachpages/CoachOne";
 import CoachTwo from './coachpages/CoachTwo.jsx';
-import CoachThree from './coachpages/CoachThree';
-import CoachFour from './coachpages/CoachFour';
+// import CoachThree from './coachpages/CoachThree';
+// import CoachFour from './coachpages/CoachFour';
 import ScrollToTop from './components/scroll.jsx';
 
 function App() {  
@@ -18,8 +18,8 @@ function App() {
             <Route path="/news" element={<News/>}/>
             <Route path="/coaches/coachone" element={<CoachOne/>}/>
             <Route path="/coaches/coachtwo" element={<CoachTwo/>}/>
-            <Route path="/coaches/coachthree" element={<CoachThree/>}/>
-            <Route path="/coaches/coachfour" element={<CoachFour/>}/>
+            {/* <Route path="/coaches/coachthree" element={<CoachThree/>}/>
+            <Route path="/coaches/coachfour" element={<CoachFour/>}/> */}
           </Routes>
     </div>
   )

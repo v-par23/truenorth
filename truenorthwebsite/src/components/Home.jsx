@@ -1,7 +1,7 @@
 import IMG1 from "../assets/image_1.png";
-import IMG2 from "../assets/image_2.png";
+// import IMG2 from "../assets/image_2.png"; // Temporarily commented out
 import IMG3 from "../assets/image_3.png";
-import IMG4 from "../assets/image_4.png";
+// import IMG4 from "../assets/image_4.png"; // Temporarily commented out
 import img from "../assets/image.png";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
@@ -148,7 +148,7 @@ const Home = () => {
 
       {/* Coaches Grid */}
       <div className="w-full max-w-7xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
           
           {/* Coach 1 */}
           <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
@@ -178,7 +178,7 @@ const Home = () => {
             </Link>
           </motion.div>
 
-          {/* Coach 3 */}
+          {/* Coach 3 - Temporarily Commented Out
           <motion.div className="flex items-center flex-col p-4 rounded-lg  transition-colors"
           whileHover={{scale:1.1}}>
             <h3 className="text-lg sm:text-xl font-semibold mb-1">Mo Zhang</h3>
@@ -192,7 +192,7 @@ const Home = () => {
             </Link>
           </motion.div>
 
-          {/* Coach 4 */}
+          Coach 4 - Temporarily Commented Out
           <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors
           "
           whileHover={{scale:1.1}}>
@@ -206,6 +206,7 @@ const Home = () => {
               More Info
             </Link>
           </motion.div>
+          */}
         </div>
       </div>
     </div>

@@ -227,7 +227,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           
           {/* Rising Star Class */}
-            <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors">
+            <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors flex flex-col">
               <h1 className="text-red-600 text-xl sm:text-2xl font-bold">Rising Star Class</h1>
             <div className="mb-4">
               <p className="text-red-600 font-semibold mb-2">Time:</p>
@@ -240,16 +240,15 @@ const Home = () => {
               <p className="text-red-600 font-semibold mb-2">Price:</p>
               <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
             </div>
-            <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
+            <p className="text-red-600 text-lg sm:text-xl font-semibold mt-auto">Limited Spots Available</p>
           </div>
           {/* Competition Class */}
-          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors">
+          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors flex flex-col">
             <h1 className="text-red-600 text-xl sm:text-2xl font-bold">Competition Class</h1>
             <div className="mb-4">
               <p className="text-red-600 font-semibold mb-2">Time:</p>
               <p className="text-white text-sm sm:text-base leading-relaxed">
                 Saturday 9:30-12:30pm<br/>
-                Saturday 2:30-5:30pm<br/>
                 Sunday 9:30-12:30pm
               </p>
             </div>
@@ -259,7 +258,7 @@ const Home = () => {
               <p className="text-white text-sm sm:text-base">Drop In: $90/session</p>
             </div>
             
-            <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
+            <p className="text-red-600 text-lg sm:text-xl font-semibold mt-auto">Limited Spots Available</p>
           </div>
         </div>
       </div>

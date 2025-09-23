@@ -224,16 +224,16 @@ const Home = () => {
       
       {/* Classes Grid */}
       <div className="w-full max-w-7xl mb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           
-          {/* Beginner Class */}
+          {/* Rising Star Class */}
           <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors">
             <h1 className="text-red-600 text-xl sm:text-2xl font-bold mb-4">Beginner Class</h1>
             
             <div className="mb-4">
               <p className="text-red-600 font-semibold mb-2">Time:</p>
               <p className="text-white text-sm sm:text-base leading-relaxed">
-                Saturday 3:00-5:00pm<br/>
+                Saturday 3:30-5:30pm<br/>
                 Sunday 3:00-5:00pm
               </p>
             </div>
@@ -246,36 +246,13 @@ const Home = () => {
             <br></br>            
             <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
           </div>
-
-          {/* Adult Class */}
-          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors">
-            <h1 className="text-red-600 text-xl sm:text-2xl font-bold mb-4">Adult Class</h1>
-            
-            <div className="mb-4">
-              <p className="text-red-600 font-semibold mb-2">Time:</p>
-              <p className="text-white text-sm sm:text-base leading-relaxed">
-                Friday 7:00-9:00pm<br/>
-                Saturday 7:00-9:00pm<br/>
-                Sunday 7:00-9:00pm
-              </p>
-            </div>
-            
-            <div className="mb-6">
-              <p className="text-red-600 font-semibold mb-2">Price:</p>
-              <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
-            </div>
-            <br></br>
-            <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>
-          </div>
-
           {/* Competition Class */}
-          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors md:col-span-2 xl:col-span-1">
+          <div className="border border-gray-600 rounded-lg p-4 sm:p-6 bg-gray-900/20 hover:bg-gray-900/40 transition-colors">
             <h1 className="text-red-600 text-xl sm:text-2xl font-bold mb-4">Competition Class</h1>
             
             <div className="mb-4">
               <p className="text-red-600 font-semibold mb-2">Time:</p>
               <p className="text-white text-sm sm:text-base leading-relaxed">
-                Wednesday 5:30-8:30pm<br/>
                 Saturday 9:30-12:30pm<br/>
                 Saturday 2:30-5:30pm<br/>
                 Sunday 9:30-12:30pm
@@ -284,7 +261,7 @@ const Home = () => {
             
             <div className="mb-6">
               <p className="text-red-600 font-semibold mb-2">Price:</p>
-              <p className="text-white text-sm sm:text-base">Drop In: $50/session</p>
+              <p className="text-white text-sm sm:text-base">Drop In: $90/session</p>
             </div>
             
             <p className="text-red-600 text-lg sm:text-xl font-semibold">Limited Spots Available</p>

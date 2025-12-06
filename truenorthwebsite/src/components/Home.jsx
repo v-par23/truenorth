@@ -323,35 +323,6 @@ const Home = () => {
             <Train/>
             <footer className="w-full text-center py-8 mt-12 text-gray-400 text-sm border-t border-gray-700 bg-black/30">
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                    <div className="flex items-center gap-3 sm:gap-4">
-                        <a 
-                            href="https://ttcanada.ca/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="cursor-pointer"
-                        >
-                            <img 
-                                src={TTCanLogo} 
-                                alt="Table Tennis Canada" 
-                                className="h-10 sm:h-12 md:h-14 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
-                            />
-                        </a>
-                        <a 
-                            href="https://ontariotabletennis.com/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="cursor-pointer"
-                        >
-                            <img 
-                                src={OntarioTTLogo} 
-                                alt="Ontario Table Tennis" 
-                                className="h-10 sm:h-12 md:h-14 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
-                            />
-                        </a>
-                    </div>
-                    <div className="text-gray-400 text-sm">
-                        &copy; {new Date().getFullYear()} TrueNorth Table Tennis Club™. All rights reserved.
-                    </div>
                     <a 
                         href="https://butterflyonline.com/" 
                         target="_blank" 
@@ -364,6 +335,35 @@ const Home = () => {
                             className="h-12 sm:h-14 md:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
                         />
                     </a>
+                    <div className="text-gray-400 text-sm">
+                        &copy; {new Date().getFullYear()} TrueNorth Table Tennis Club™. All rights reserved.
+                    </div>
+                    <div className="flex items-center gap-3 sm:gap-4">
+                        <a 
+                            href="https://ttcanada.ca/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="cursor-pointer"
+                        >
+                            <img 
+                                src={TTCanLogo} 
+                                alt="Table Tennis Canada" 
+                                className="h-12 sm:h-14 md:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+                            />
+                        </a>
+                        <a 
+                            href="https://ontariotabletennis.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="cursor-pointer"
+                        >
+                            <img 
+                                src={OntarioTTLogo} 
+                                alt="Ontario Table Tennis" 
+                                className="h-12 sm:h-14 md:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+                            />
+                        </a>
+                    </div>
                 </div>
             </footer>
         </div>

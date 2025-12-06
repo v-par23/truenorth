@@ -4,8 +4,8 @@ import IMG3 from "../assets/image_3.png";
 // import IMG4 from "../assets/image_4.png"; // Temporarily commented out
 import img from "../assets/image.png";
 import ButterflyLogo from "../assets/butterfly_shop_2025.png";
-import TTCanLogo from "../assets/ttcan.png";
-import OntarioTTLogo from "../assets/ontario-tt.png";
+import TTCanLogo from "../assets/ttcan.jpg";
+import OntarioTTLogo from "../assets/ontario-tt.jpg";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Instagram, MapPin } from "lucide-react";

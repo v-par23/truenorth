@@ -324,11 +324,18 @@ const Home = () => {
                     <div className="text-gray-400 text-sm">
                         &copy; {new Date().getFullYear()} TrueNorth Table Tennis Club™. All rights reserved.
                     </div>
-                    <img 
-                        src={ButterflyLogo} 
-                        alt="Butterfly Shop 2025" 
-                        className="h-12 sm:h-14 md:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
-                    />
+                    <a 
+                        href="https://butterflyonline.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="cursor-pointer"
+                    >
+                        <img 
+                            src={ButterflyLogo} 
+                            alt="Butterfly Shop 2025" 
+                            className="h-12 sm:h-14 md:h-16 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+                        />
+                    </a>
                 </div>
             </footer>
         </div>

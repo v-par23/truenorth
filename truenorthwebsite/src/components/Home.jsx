@@ -252,7 +252,8 @@ const Home = () => {
             <div className="mb-4">
               <p className="text-red-600 font-semibold mb-2">Time:</p>
               <p className="text-white text-sm sm:text-base leading-relaxed">
-                Saturday 3:30-5:30pm
+                Saturday 3:30-5:30pm<br/>
+                Sunday 3:30-5:30pm
               </p>
             </div>
             

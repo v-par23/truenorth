@@ -1,7 +1,8 @@
 import IMG1 from "../assets/image_1.png";
-// import IMG2 from "../assets/image_2.png"; // Temporarily commented out
+import IMG2 from "../assets/image_2.png";
 import IMG3 from "../assets/image_3.png";
 // import IMG4 from "../assets/image_4.png"; // Temporarily commented out
+import IMG5 from "../assets/image_5.png";
 import img from "../assets/image.png";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
@@ -148,7 +149,7 @@ const Home = () => {
 
       {/* Coaches Grid */}
       <div className="w-full max-w-7xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           
           {/* Coach 1 */}
           <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
@@ -172,6 +173,22 @@ const Home = () => {
             <img src={IMG1} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Hongtao Chen"/>
             <Link 
               to="/coaches/coachtwo" 
+              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+            >
+              More Info
+            </Link>
+          </motion.div>
+
+          {/* Coach 5 */}
+          <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.1}}>
+            <h3 className="text-lg sm:text-xl font-semibold mb-1">Siqian Wu</h3>
+            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Head Coach</p>
+            <div className="w-full max-w-[200px] aspect-square rounded-lg mb-4 overflow-hidden">
+              <img src={IMG5} className="w-full h-full object-cover object-center scale-170" alt="Siqian Wu"/>
+            </div>
+            <Link 
+              to="/coaches/coachfive" 
               className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
             >
               More Info

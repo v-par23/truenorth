@@ -6,6 +6,7 @@ import CoachOne from "./coachpages/CoachOne";
 import CoachTwo from './coachpages/CoachTwo.jsx';
 // import CoachThree from './coachpages/CoachThree';
 // import CoachFour from './coachpages/CoachFour';
+import CoachFive from './coachpages/CoachFive.jsx';
 import ScrollToTop from './components/scroll.jsx';
 
 function App() {  
@@ -20,6 +21,7 @@ function App() {
             <Route path="/coaches/coachtwo" element={<CoachTwo/>}/>
             {/* <Route path="/coaches/coachthree" element={<CoachThree/>}/>
             <Route path="/coaches/coachfour" element={<CoachFour/>}/> */}
+            <Route path="/coaches/coachfive" element={<CoachFive/>}/>
           </Routes>
     </div>
   )

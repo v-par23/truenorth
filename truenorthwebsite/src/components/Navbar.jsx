@@ -36,6 +36,15 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleGoToHome = () => {
+    navigate('/');
+    setTimeout(() => {
+      const el = document.getElementById("home");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -58,7 +67,9 @@ const Navbar = () => {
       
       {/* Logo stays left always */}
       <div className="w-1/2">
-        <img src={LOGO} className="w-[170px] rounded" alt="logo" />
+        <button onClick={handleGoToHome} className="cursor-pointer hover:opacity-80 transition-opacity">
+          <img src={LOGO} className="w-[170px] rounded" alt="logo" />
+        </button>
       </div>
 
       {/* Navbar links on medium+, hamburger on small */}

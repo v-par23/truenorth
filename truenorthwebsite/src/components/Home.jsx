@@ -4,21 +4,46 @@ import IMG3 from "../assets/image_3.png";
 // import IMG4 from "../assets/image_4.png"; // Temporarily commented out
 import IMG5 from "../assets/image_5.png";
 import img from "../assets/image.png";
+import truenorth2 from "../assets/truenorth2.jpeg";
 import ButterflyLogo from "../assets/butterfly_shop_2025.png";
 import TTCanLogo from "../assets/ttcan.jpg";
 import OntarioTTLogo from "../assets/ontario-tt.jpg";
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Instagram, MapPin } from "lucide-react";
+import { Phone, Mail, Instagram, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 const Home = () => {
   const [aboutUsAnimated, setAboutUsAnimated] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
       setAboutUsAnimated(true);
   }, []);
+
+  // Slideshow images
+  const slideshowImages = [
+    img, // image.png
+    truenorth2, // truenorth2.jpeg
+  ];
+
+  // Auto-rotate slideshow every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [slideshowImages.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slideshowImages.length) % slideshowImages.length);
+  };
 
      const AboutUs = () => {
   return(
@@ -82,16 +107,55 @@ const Home = () => {
       {/* Main Content Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8 mb-12 lg:mb-16">
         
-        {/* Image Section */}
-        <motion.div className="w-full lg:flex-1 max-w-md lg:max-w-xl"
-          whileHover={{scale:1.1}}
-        >
-          <img 
-            src={img} 
-            alt="True North Table Tennis Club" 
-            className="rounded-lg w-full h-auto object-cover shadow-lg" 
-          />
-        </motion.div>
+        {/* Image Slideshow Section */}
+        <div className="w-full lg:flex-1 max-w-md lg:max-w-xl relative">
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <motion.div
+              key={currentSlide}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="w-full"
+            >
+              <img 
+                src={slideshowImages[currentSlide]} 
+                alt="True North Table Tennis Club" 
+                className="rounded-lg w-full h-auto object-cover" 
+              />
+            </motion.div>
+            
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 z-10"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 z-10"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+
+            {/* Slide Indicators */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+              {slideshowImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? 'bg-white w-8' : 'bg-white/50'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
         
         {/* Text Section */}
         <div className="w-full lg:flex-1 max-w-md lg:max-w-xl text-center lg:text-left">

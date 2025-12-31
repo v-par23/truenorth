@@ -1,11 +1,13 @@
 import IMG1 from "../assets/image_1.png";
 import IMG2 from "../assets/image_2.png";
 import IMG3 from "../assets/image_3.png";
-// import IMG4 from "../assets/image_4.png"; // Temporarily commented out
+import IMG4 from "../assets/image_4.png";
 import IMG5 from "../assets/image_5.png";
 import img from "../assets/image.png";
 import truenorth2 from "../assets/truenorth2.jpeg";
-import ButterflyLogo from "../assets/butterfly_shop_2025.png";
+import ButterflyLogo from "../assets/butterly_new.jpg";
+import Coach6Image from "../assets/amy_coach.png";
+import Coach7Image from "../assets/xiadong_coach.png";
 import TTCanLogo from "../assets/ttcan.jpg";
 import OntarioTTLogo from "../assets/ontario-tt.jpg";
 import Navbar from "./Navbar";
@@ -195,68 +197,71 @@ const Home = () => {
     
     const Coaches = () => {
   return(
-    <div className="text-white w-full px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col min-h-screen py-8 scroll-mt-[120px] md:scroll-mt-0 mb-[250px] md:mb-0" id="coaches">
+    <div className="text-white w-full px-3 sm:px-4 md:px-6 lg:px-8 flex justify-center items-center flex-col min-h-screen py-6 sm:py-8 scroll-mt-[120px] md:scroll-mt-0 mb-[150px] sm:mb-[200px] md:mb-0" id="coaches">
       {/* Header Section */}
-      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6">
+      <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-4 sm:mb-6 px-2">
         Meet Our Coaches
       </div>
       
       {/* Description Section */}
-      <div className="text-center max-w-4xl mb-8">
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-extralight mb-2">
+      <div className="text-center max-w-4xl mb-6 sm:mb-8 px-2">
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-extralight mb-2">
           <span className="text-red-600">Professional</span> and 
           <span className="text-red-600"> experienced </span> 
           coaching team from entry-level to top performance,
         </p>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-extralight">
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-extralight">
           TrueNorth has the best coaches to meet your 
           <span className="text-red-600"> expectations.</span>
         </p>
       </div>
 
       {/* Coaches Grid */}
-      <div className="w-full max-w-7xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div className="w-full max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           
           {/* Coach 1 */}
-          <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
-          whileHover={{scale:1.1}}>
-            <h3 className="text-lg sm:text-xl font-semibold mb-1">Eugene Wang</h3>
-            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Founder & Head Coach</p>
-            <img src={IMG3} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Eugene Wang"/>
+          <motion.div className="flex items-center flex-col p-3 sm:p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95}}>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1">Eugene Wang</h3>
+            <p className="text-xs sm:text-sm md:text-base text-gray-300 mb-3 sm:mb-4 text-center">Founder & Head Coach</p>
+            <img src={IMG3} className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[200px] aspect-square object-cover rounded-lg mb-3 sm:mb-4" alt="Eugene Wang"/>
             <Link 
               to="/coaches/coachone" 
-              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+              className="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-xs sm:text-sm md:text-base transition-colors text-center w-full max-w-[150px]"
             >
               More Info
             </Link>
           </motion.div>
 
           {/* Coach 2 */}
-          <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
-          whileHover={{scale:1.1}}>
-            <h3 className="text-lg sm:text-xl font-semibold mb-1">Hongtao Chen</h3>
-            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Co-founder & Head Coach</p>
-            <img src={IMG1} className="w-full max-w-[200px] aspect-square object-cover rounded-lg mb-4" alt="Hongtao Chen"/>
+          <motion.div className="flex items-center flex-col p-3 sm:p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95}}>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1">Hongtao Chen</h3>
+            <p className="text-xs sm:text-sm md:text-base text-gray-300 mb-3 sm:mb-4 text-center">Co-founder & Head Coach</p>
+            <img src={IMG1} className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[200px] aspect-square object-cover rounded-lg mb-3 sm:mb-4" alt="Hongtao Chen"/>
             <Link 
               to="/coaches/coachtwo" 
-              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+              className="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-xs sm:text-sm md:text-base transition-colors text-center w-full max-w-[150px]"
             >
               More Info
             </Link>
           </motion.div>
 
           {/* Coach 5 */}
-          <motion.div className="flex items-center flex-col p-4 rounded-lg transition-colors"
-          whileHover={{scale:1.1}}>
-            <h3 className="text-lg sm:text-xl font-semibold mb-1">Siqian Wu</h3>
-            <p className="text-sm sm:text-base text-gray-300 mb-4 text-center">Head Coach</p>
-            <div className="w-full max-w-[200px] aspect-square rounded-lg mb-4 overflow-hidden">
+          <motion.div className="flex items-center flex-col p-3 sm:p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95}}>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1">Siqian Wu</h3>
+            <p className="text-xs sm:text-sm md:text-base text-gray-300 mb-3 sm:mb-4 text-center">Head Coach</p>
+            <div className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[200px] aspect-square rounded-lg mb-3 sm:mb-4 overflow-hidden">
               <img src={IMG5} className="w-full h-full object-cover object-center scale-170" alt="Siqian Wu"/>
             </div>
             <Link 
               to="/coaches/coachfive" 
-              className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-sm sm:text-base transition-colors text-center"
+              className="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-xs sm:text-sm md:text-base transition-colors text-center w-full max-w-[150px]"
             >
               More Info
             </Link>
@@ -291,6 +296,46 @@ const Home = () => {
             </Link>
           </motion.div>
           */}
+        </div>
+      </div>
+
+      {/* Additional Coaches Row */}
+      <div className="w-full max-w-7xl mt-8 sm:mt-12 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 justify-items-center">
+          
+          {/* Coach 6 - Amy Ting Guo */}
+          <motion.div className="flex items-center flex-col p-3 sm:p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95}}>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1">Amy Ting Guo</h3>
+            <p className="text-xs sm:text-sm md:text-base text-gray-300 mb-3 sm:mb-4 text-center">Head Coach</p>
+            <div className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[200px] aspect-square rounded-lg mb-3 sm:mb-4 overflow-hidden">
+              <img src={Coach6Image} className="w-full h-full object-cover object-right scale-230" alt="Amy Ting Guo"/>
+            </div>
+            <Link 
+              to="/coaches/coachsix" 
+              className="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-xs sm:text-sm md:text-base transition-colors text-center w-full max-w-[150px]"
+            >
+              More Info
+            </Link>
+          </motion.div>
+
+          {/* Coach 7 - Xiaodong Zhu */}
+          <motion.div className="flex items-center flex-col p-3 sm:p-4 rounded-lg transition-colors"
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95}}>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1">Xiaodong Zhu</h3>
+            <p className="text-xs sm:text-sm md:text-base text-gray-300 mb-3 sm:mb-4 text-center">Head Coach</p>
+            <div className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[200px] aspect-square rounded-lg mb-3 sm:mb-4 overflow-hidden">
+              <img src={Coach7Image} className="w-full h-full object-cover object-left scale-150" alt="Xiaodong Zhu"/>
+            </div>
+            <Link 
+              to="/coaches/coachseven" 
+              className="px-3 sm:px-4 py-1.5 sm:py-2 bg-red-600 hover:bg-red-700 rounded font-bold text-xs sm:text-sm md:text-base transition-colors text-center w-full max-w-[150px]"
+            >
+              More Info
+            </Link>
+          </motion.div>
         </div>
       </div>
     </div>

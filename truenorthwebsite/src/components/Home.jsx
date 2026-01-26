@@ -320,14 +320,14 @@ const Home = () => {
             </Link>
           </motion.div>
 
-          {/* Coach 7 - Xiaodong Zhu */}
+          {/* Coach 7 - Zhu Zhecui */}
           <motion.div className="flex items-center flex-col p-3 sm:p-4 rounded-lg transition-colors"
           whileHover={{scale:1.05}}
           whileTap={{scale:0.95}}>
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1">Xiaodong Zhu</h3>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1">Zhu Zhecui</h3>
             <p className="text-xs sm:text-sm md:text-base text-gray-300 mb-3 sm:mb-4 text-center">Head Coach</p>
             <div className="w-full max-w-[150px] sm:max-w-[180px] md:max-w-[200px] aspect-square rounded-lg mb-3 sm:mb-4 overflow-hidden">
-              <img src={Coach7Image} className="w-full h-full object-cover object-left scale-150" alt="Xiaodong Zhu"/>
+              <img src={Coach7Image} className="w-full h-full object-cover object-left scale-150" alt="Zhu Zhecui"/>
             </div>
             <Link 
               to="/coaches/coachseven" 

@@ -1,11 +1,12 @@
 import Navbar from "./Navbar";
 import { motion } from "motion/react";
+import MarchPoster from "../assets/marchposter.png";
 
 const News = () => {
     return (
-        <div className="w-dvw h-dvh flex flex-col items-center bg-gradient-to-br from-red-900 via-black to-red-900">
+        <div className="w-dvw min-h-screen flex flex-col items-center bg-gradient-to-br from-red-900 via-black to-red-900">
             <Navbar />
-            <div className="flex flex-1 flex-col justify-center items-center w-full py-10">
+            <div className="flex flex-1 flex-col justify-center items-center w-full py-10 px-4 min-h-screen">
                 <motion.div
                     initial={{ opacity: 0, y: -40 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -15,19 +16,48 @@ const News = () => {
                     <span className="text-yellow-400 text-6xl md:text-7xl font-black tracking-wider drop-shadow-lg mb-2">
                         📰
                     </span>
-                    <span className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold mb-2">
-                        News Portal Coming Soon!
+                    <span className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold mb-5 text-center">
+                        News & Headlines
                     </span>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
-                    className="text-gray-200 text-lg sm:text-xl md:text-2xl text-center max-w-xl mb-8"
+                    className="text-gray-200 text-sm sm:text-base md:text-lg text-center max-w-xl mb-8 font-extralight"
                 >
-                    We’re preparing exciting updates, event recaps, and club announcements.<br />
-                    <span className="text-red-400 font-semibold">Check back soon for the latest news!</span>
+                    Exciting updates, event recaps, and club announcements.
                 </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 24 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+                    className="w-full max-w-5xl flex flex-col items-center gap-5 rounded-2xl p-4 sm:p-6 mb-6"
+                >
+                    <div className="text-center">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                            March Break Camp
+                        </h3>
+                        <div className="text-gray-200 text-sm sm:text-base md:text-lg font-extralight">
+                            International Chess × Table Tennis intensive week.
+                        </div>
+                        <div className="text-gray-200 text-sm sm:text-base md:text-lg font-extralight mt-2 sm:whitespace-nowrap">
+                            Limited spots available. Contact us to reserve your spot.
+                        </div>
+                        <div className="text-red-600 font-semibold mt-3 text-xs sm:text-sm md:text-base flex flex-col sm:flex-row sm:items-center sm:justify-center sm:gap-12">
+                            <span>Call: 416-525-7624</span>
+                            <span>Email: wangzhen851113@gmail.com</span>
+                        </div>
+                    </div>
+                    <img
+                        src={MarchPoster}
+                        alt="March Break Camp poster"
+                        className="w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[420px] rounded-xl shadow-2xl"
+                    />
+                </motion.div>
+                <div className="text-red-600 font-semibold mt-4 mb-8 text-xs sm:text-sm md:text-base text-center">
+                    Check back soon for the latest news!
+                </div>
                 <motion.div
                     initial={{ opacity: 0, rotate: -10 }}
                     animate={{ opacity: 1, rotate: 10 }}

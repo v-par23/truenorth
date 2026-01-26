@@ -61,7 +61,7 @@ const CoachSeven = () => {
                 <div className="relative px-6 py-16 text-center">
                     <div className="max-w-4xl mx-auto">
                         <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent leading-normal">
-                            Zhu Zhecui
+                        Zhu Zhecui
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-300 font-light">
                             Head Coach & Certified Table Tennis Professional

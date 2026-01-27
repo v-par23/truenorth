@@ -419,38 +419,38 @@ const Home = () => {
     <div className="inline-flex flex-col items-start space-y-3">
       <a
         href="tel:+14165257624"
-        className="flex items-center text-white hover:text-red-400 transition"
+        className="flex items-start text-white hover:text-red-400 transition gap-2 text-left"
       >
-        <Phone className="w-5 h-5 text-red-500 mr-2" /> 
-        (416) 525‑7624
+        <Phone className="w-5 h-5 text-red-500 mt-0.5" /> 
+        <span>(416) 525-7624</span>
       </a>
 
       <a
         href="mailto:truenorthtabletennis@hotmail.com"
-        className="flex items-center text-white hover:text-red-400 transition"
+        className="flex items-start text-white hover:text-red-400 transition gap-2 text-left"
       >
-        <Mail className="w-5 h-5 text-red-500 mr-2" /> 
-        truenorthtabletennis@hotmail.com
+        <Mail className="w-5 h-5 text-red-500 mt-0.5" /> 
+        <span className="break-words">truenorthtabletennis@hotmail.com</span>
       </a>
 
       <a
         href="https://www.instagram.com/truenorthttc"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center text-white hover:text-red-400 transition"
+        className="flex items-start text-white hover:text-red-400 transition gap-2 text-left"
       >
-        <Instagram className="w-5 h-5 text-red-500 mr-2" /> 
-        @truenorthttc
+        <Instagram className="w-5 h-5 text-red-500 mt-0.5" /> 
+        <span>@truenorthttc</span>
       </a>
 
       <a
         href="https://g.co/kgs/Pukix6w"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center text-white hover:text-red-400 transition"
+        className="flex items-start text-white hover:text-red-400 transition gap-2 text-left"
       >
-        <MapPin className="w-5 h-5 text-red-500 mr-2" /> 
-        3470 Pharmacy Ave, Scarborough, ON M1W 2S7
+        <MapPin className="w-5 h-5 text-red-500 mt-0.5" /> 
+        <span className="break-words">3470 Pharmacy Ave, Scarborough, ON M1W 2S7</span>
       </a>
     </div>
   </div>

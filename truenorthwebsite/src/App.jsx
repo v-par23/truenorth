@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, Navigate } from 'react-router-dom';
 import Home from "./components/Home.jsx";
 import Members from "./components/Members";
 import News from "./components/News";
@@ -17,7 +17,9 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/members" element={<Members/>}/>
+            <Route path="/athletes" element={<Members/>}/>
+            <Route path="/players" element={<Navigate to="/athletes" replace />} />
+            <Route path="/members" element={<Navigate to="/athletes" replace />} />
             <Route path="/news" element={<News/>}/>
             <Route path="/coaches/coachone" element={<CoachOne/>}/>
             <Route path="/coaches/coachtwo" element={<CoachTwo/>}/>

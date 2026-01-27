@@ -80,7 +80,7 @@ const Navbar = () => {
           <Link to="/" className={navbarStyle} onClick={handleGoToIntro}>About Us</Link>
           <Link to="/" className={navbarStyle} onClick={handleGoToCoaches}>Coaches</Link>
           <Link to="/" className={navbarStyle} onClick={handleGoToJoinNow}>Join Now</Link>
-          <Link to="/members" className={navbarStyle}>Members</Link>
+          <Link to="/athletes" className={navbarStyle}>Athletes</Link>
           <Link to="/news" className={navbarStyle}>News</Link>
         </div>
 
@@ -99,7 +99,7 @@ const Navbar = () => {
           <Link to="/" className=" w-fit text-white hover:text-gray-300" onClick={handleGoToIntro}>About Us</Link>
           <Link to="/" className=" w-fit text-white hover:text-gray-300" onClick={handleGoToCoaches}>Coaches</Link>
           <Link to="/" className=" w-fit text-white hover:text-gray-300" onClick={handleGoToJoinNow}>Join Now</Link>
-          <Link to="/members" className=" w-fit text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>Members</Link>
+          <Link to="/athletes" className=" w-fit text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>Athletes</Link>
           <Link to="/news" className=" w-fit text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>News</Link>
           </div>
         </div>

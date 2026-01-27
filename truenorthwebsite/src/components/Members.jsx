@@ -1,6 +1,21 @@
 import { useState } from "react";
 import Navbar from './Navbar';
 import { motion } from "motion/react";
+import JeremyHazinImage from "../assets/jeremy-hazin.jpg";
+import JoyceXuImage from "../assets/joyce-xu.jpg";
+import TerenceYeungImage from "../assets/terence-yeung.jpg";
+import MaxJiImage from "../assets/max-ji.jpg";
+import JordanGrewalImage from "../assets/jordan-grewal.jpg";
+import GinaFuImage from "../assets/gina-fu.jpg";
+import JamesYuImage from "../assets/james-yu.jpg";
+import KevinGuoImage from "../assets/kevin-guo.jpg";
+import JustinYouImage from "../assets/justin-you.jpg";
+import ZacharyLiImage from "../assets/zachary-li.jpg";
+import VedantParikhImage from "../assets/vedant-parikh.jpg";
+import AidenZhaoImage from "../assets/aiden-zhao.jpg";
+import StephanieBaiImage from "../assets/stephanie-bai.jpg";
+import ValeriePoonImage from "../assets/valerie-poon.jpg";
+import OwenHuImage from "../assets/owen-hu.jpg";
 
 const Members = () => {
     const [activeMember, setActiveMember] = useState(null);
@@ -10,7 +25,7 @@ const Members = () => {
         {
             name: "Jeremy Hazin",
             headline: "Tokyo 2020 and Paris 2024 Olympian",
-            photo: "/members/jeremy-hazin.jpg",
+            photo: JeremyHazinImage,
             achievements: [
                 "Tokyo 2020 and Paris 2024 Olympian",
                 "Current New York University student",
@@ -27,7 +42,7 @@ const Members = () => {
         {
             name: "Joyce Xu",
             headline: "Member of Team Canada at World Championships",
-            photo: "/members/joyce-xu.jpg",
+            photo: JoyceXuImage,
             achievements: [
                 "Current medical student at McMaster University",
                 "Member of Team Canada at 2018, 2019, 2021 World Championships",
@@ -46,7 +61,7 @@ const Members = () => {
         {
             name: "Terence Yeung",
             headline: "Member of Team Canada at World Championships",
-            photo: "/members/terence-yeung.jpg",
+            photo: TerenceYeungImage,
             achievements: [
                 "Current medical student at Western University",
                 "Member of Team Canada at 2019 World Championships",
@@ -65,7 +80,7 @@ const Members = () => {
         {
             name: "Max Ji",
             headline: "Canadian Men’s National Team Member",
-            photo: "/members/max-ji.jpg",
+            photo: MaxJiImage,
             achievements: [
                 "Canadian Men’s National Team Member",
                 "Current student at University of Toronto",
@@ -80,7 +95,7 @@ const Members = () => {
         {
             name: "Jordan Grewal",
             headline: "Canadian U19 National Team Member",
-            photo: "/members/jordan-grewal.jpg",
+            photo: JordanGrewalImage,
             achievements: [
                 "Canadian U19 National Team Member",
                 "Member of Team Canada at 2024 World Team Championships",
@@ -95,7 +110,7 @@ const Members = () => {
         {
             name: "Gina Fu",
             headline: "Canadian Women’s National Team Member",
-            photo: "/members/gina-fu.jpg",
+            photo: GinaFuImage,
             achievements: [
                 "Canadian Women’s National Team Member",
                 "Current Cornell University student",
@@ -112,7 +127,7 @@ const Members = () => {
         {
             name: "James Yu",
             headline: "Canadian U19 National Team Member",
-            photo: "/members/james-yu.jpg",
+            photo: JamesYuImage,
             achievements: [
                 "Canadian U19 National Team Member",
                 "Current student at University of Waterloo",
@@ -127,7 +142,7 @@ const Members = () => {
         {
             name: "Kevin Guo",
             headline: "Canadian Men’s National Team Member",
-            photo: "/members/kevin-guo.jpg",
+            photo: KevinGuoImage,
             achievements: [
                 "Canadian Men’s National Team Member",
                 "Current Yale University student",
@@ -144,7 +159,7 @@ const Members = () => {
         {
             name: "Justin You",
             headline: "Canadian U19 National Team Member",
-            photo: "/members/justin-you.jpg",
+            photo: JustinYouImage,
             achievements: [
                 "Canadian U19 National Team Member",
                 "Current student at University of Waterloo",
@@ -160,7 +175,7 @@ const Members = () => {
         {
             name: "Zachary Li",
             headline: "Canadian U15 National Team Member",
-            photo: "/members/zachary-li.jpg",
+            photo: ZacharyLiImage,
             achievements: [
                 "Canadian U15 National Team Member",
                 "Current student at University of Washington",
@@ -178,7 +193,8 @@ const Members = () => {
         {
             name: "Vedant Parikh",
             headline: "Canadian U15 National Team Member",
-            photo: "/members/vedant-parikh.jpg",
+            photo: VedantParikhImage,
+            imageClass: "scale-125 object-top",
             achievements: [
                 "Canadian U15 National Team Member",
                 "Current student at University of Waterloo",
@@ -193,7 +209,7 @@ const Members = () => {
         {
             name: "Aiden Zhao",
             headline: "2024 Ontario Summer Games U19 Bronze Medal",
-            photo: "/members/aiden-zhao.jpg",
+            photo: AidenZhaoImage,
             achievements: [
                 "2024 Ontario Summer Games U19 Boys Doubles Bronze Medal",
                 "2024 Ontario Summer Games U19 Boys Singles Quarterfinalist",
@@ -211,7 +227,7 @@ const Members = () => {
         {
             name: "Stephanie Bai",
             headline: "Canadian U15 National Team Member",
-            photo: "/members/stephanie-bai.jpg",
+            photo: StephanieBaiImage,
             achievements: [
                 "Canadian U15 National Team Member",
                 "2024 WTT Youth Westchester U15 Mixed Doubles Semifinalist",
@@ -230,7 +246,8 @@ const Members = () => {
         {
             name: "Valerie Poon",
             headline: "2024 Ontario Championships U15 Silver Medal",
-            photo: "/members/valerie-poon.jpg",
+            photo: ValeriePoonImage,
+            imageClass: "scale-110 object-top",
             achievements: [
                 "2024 Ontario Championships U15 Girls Doubles Silver Medal",
                 "2022 Ontario Championships Women’s Singles Semifinalist",
@@ -241,7 +258,8 @@ const Members = () => {
         {
             name: "Owen Hu",
             headline: "2024 US Open U1800 Singles Champion",
-            photo: "/members/owen-hu.jpg",
+            photo: OwenHuImage,
+            imageClass: "scale-135 object-center",
             achievements: [
                 "2024 US Open U1800 Singles Champion",
                 "2024 Ontario Championships U15 Boys Doubles Champion",
@@ -276,9 +294,9 @@ const Members = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold mt-8 mb-8 text-center"
+                    className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold mt-[52px] mb-8 text-center"
                 >
-                    Members
+                    Our Athletes
                 </motion.div>
 
                 <div className="w-full max-w-7xl">
@@ -291,16 +309,17 @@ const Members = () => {
                                 onClick={() => setActiveMember(member)}
                                 className="flex flex-col items-center text-center bg-black/30 border border-red-700/40 rounded-xl p-4 hover:border-red-500/70 transition-colors"
                             >
-                                <div className="w-16 h-16 rounded-full bg-red-600/30 border border-red-600/60 flex items-center justify-center text-white font-bold text-lg mb-3 relative overflow-hidden">
-                                    {member.photo && !imageErrors[member.name] && (
-                                        <img
-                                            src={member.photo}
-                                            alt={member.name}
-                                            className="absolute inset-0 w-full h-full object-cover"
-                                            onError={() => handleImageError(member.name)}
-                                        />
-                                    )}
-                                    <span className="relative z-10">{getInitials(member.name)}</span>
+                                <div className="flex items-center justify-center mb-3">
+                                    <div className="w-16 h-16 rounded-full bg-red-600/30 border border-red-600/60 flex items-center justify-center text-white font-bold text-lg relative overflow-hidden">
+                                        {member.photo && !imageErrors[member.name] && (
+                                            <img
+                                                src={member.photo}
+                                                alt={member.name}
+                                                className={`absolute inset-0 w-full h-full object-cover ${member.imageClass || ""}`}
+                                                onError={() => handleImageError(member.name)}
+                                            />
+                                        )}
+                                    </div>
                                 </div>
                                 <div className="text-white font-semibold">{member.name}</div>
                                 <div className="text-red-300 text-sm mt-1">{member.headline}</div>
@@ -319,7 +338,7 @@ const Members = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.2, ease: "easeOut" }}
-                        className="w-full max-w-lg rounded-2xl bg-gradient-to-br from-gray-900 via-black to-gray-800 border border-red-700/50 p-6 text-white"
+                        className="w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-2xl bg-gradient-to-br from-gray-900 via-black to-gray-800 border border-red-700/50 p-6 text-white"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <div className="flex justify-between items-start gap-4">
@@ -329,11 +348,10 @@ const Members = () => {
                                         <img
                                             src={activeMember.photo}
                                             alt={activeMember.name}
-                                            className="absolute inset-0 w-full h-full object-cover"
+                                            className={`absolute inset-0 w-full h-full object-cover ${activeMember.imageClass || ""}`}
                                             onError={() => handleImageError(activeMember.name)}
                                         />
                                     )}
-                                    <span className="relative z-10">{getInitials(activeMember.name)}</span>
                                 </div>
                                 <div>
                                     <div className="text-2xl font-bold">{activeMember.name}</div>

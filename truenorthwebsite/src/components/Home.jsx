@@ -5,6 +5,16 @@ import IMG4 from "../assets/image_4.png";
 import IMG5 from "../assets/image_5.png";
 import img from "../assets/image.png";
 import truenorth2 from "../assets/truenorth2.jpeg";
+import truenorth3 from "../assets/truenorth3.jpg";
+import truenorth4 from "../assets/truenorth4.jpg";
+import truenorth5 from "../assets/truenorth5.jpg";
+import truenorth6 from "../assets/truenorth6.jpg";
+import truenorth7 from "../assets/truenorth7.jpg";
+import truenorth8 from "../assets/truenorth8.jpg";
+import truenorth9 from "../assets/truenorth9.jpg";
+import truenorth10 from "../assets/truenorth10.jpg";
+import truenorth11 from "../assets/truenorth11.jpg";
+import truenorth12 from "../assets/truenorth12.jpg";
 import ButterflyLogo from "../assets/butterly_new.jpg";
 import Coach6Image from "../assets/amy_coach.png";
 import Coach7Image from "../assets/xiadong_coach.png";
@@ -28,6 +38,16 @@ const Home = () => {
   const slideshowImages = [
     img, // image.png
     truenorth2, // truenorth2.jpeg
+    truenorth3, // truenorth3.jpg
+    truenorth4, // truenorth4.jpg
+    truenorth5, // truenorth5.jpg
+    truenorth6, // truenorth6.jpg
+    truenorth7, // truenorth7.jpg
+    truenorth8, // truenorth8.jpg
+    truenorth9, // truenorth9.jpg
+    truenorth10, // truenorth10.jpg
+    truenorth11, // truenorth11.jpg
+    truenorth12, // truenorth12.jpg
   ];
 
   // Auto-rotate slideshow every 5 seconds

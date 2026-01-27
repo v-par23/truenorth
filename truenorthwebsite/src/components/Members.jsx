@@ -20,6 +20,7 @@ import OwenHuImage from "../assets/owen-hu.jpg";
 const Members = () => {
     const [activeMember, setActiveMember] = useState(null);
     const [imageErrors, setImageErrors] = useState({});
+    const [activeImage, setActiveImage] = useState(null);
 
     const members = [
         {
@@ -111,6 +112,7 @@ const Members = () => {
             name: "Gina Fu",
             headline: "Canadian Women’s National Team Member",
             photo: GinaFuImage,
+            imageClass: "scale-115 object-center",
             achievements: [
                 "Canadian Women’s National Team Member",
                 "Current Cornell University student",
@@ -194,7 +196,7 @@ const Members = () => {
             name: "Vedant Parikh",
             headline: "Canadian U15 National Team Member",
             photo: VedantParikhImage,
-            imageClass: "scale-125 object-top",
+            imageClass: "scale-125 object-top -translate-y-1",
             achievements: [
                 "Canadian U15 National Team Member",
                 "Current student at University of Waterloo",
@@ -310,7 +312,15 @@ const Members = () => {
                                 className="flex flex-col items-center text-center bg-black/30 border border-red-700/40 rounded-xl p-4 hover:border-red-500/70 transition-colors"
                             >
                                 <div className="flex items-center justify-center mb-3">
-                                    <div className="w-16 h-16 rounded-full bg-red-600/30 border border-red-600/60 flex items-center justify-center text-white font-bold text-lg relative overflow-hidden">
+                                    <button
+                                        type="button"
+                                        className="w-16 h-16 rounded-full bg-red-600/30 border border-red-600/60 flex items-center justify-center text-white font-bold text-lg relative overflow-hidden transition-transform duration-200 hover:scale-110 focus-visible:scale-110"
+                                        aria-label={`${member.name} photo`}
+                                        onClick={(event) => {
+                                            event.stopPropagation();
+                                            setActiveImage(member);
+                                        }}
+                                    >
                                         {member.photo && !imageErrors[member.name] && (
                                             <img
                                                 src={member.photo}
@@ -319,7 +329,7 @@ const Members = () => {
                                                 onError={() => handleImageError(member.name)}
                                             />
                                         )}
-                                    </div>
+                                    </button>
                                 </div>
                                 <div className="text-white font-semibold">{member.name}</div>
                                 <div className="text-red-300 text-sm mt-1">{member.headline}</div>
@@ -343,7 +353,15 @@ const Members = () => {
                     >
                         <div className="flex justify-between items-start gap-4">
                             <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-full bg-red-600/30 border border-red-600/60 flex items-center justify-center text-white font-bold text-lg relative overflow-hidden">
+                                <button
+                                    type="button"
+                                    className="w-14 h-14 rounded-full bg-red-600/30 border border-red-600/60 flex items-center justify-center text-white font-bold text-lg relative overflow-hidden transition-transform duration-200 hover:scale-110 focus-visible:scale-110"
+                                    aria-label={`${activeMember.name} photo`}
+                                    onClick={(event) => {
+                                        event.stopPropagation();
+                                        setActiveImage(activeMember);
+                                    }}
+                                >
                                     {activeMember.photo && !imageErrors[activeMember.name] && (
                                         <img
                                             src={activeMember.photo}
@@ -352,7 +370,7 @@ const Members = () => {
                                             onError={() => handleImageError(activeMember.name)}
                                         />
                                     )}
-                                </div>
+                                </button>
                                 <div>
                                     <div className="text-2xl font-bold">{activeMember.name}</div>
                                     <div className="text-red-300 text-sm mt-1">{activeMember.headline}</div>
@@ -379,6 +397,29 @@ const Members = () => {
                                 ))}
                             </ul>
                         </div>
+                    </motion.div>
+                </div>
+            )}
+            {activeImage && (
+                <div
+                    className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 px-4"
+                    onClick={() => setActiveImage(null)}
+                >
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.2, ease: "easeOut" }}
+                        className="w-[80vw] max-w-[420px] aspect-square rounded-full overflow-hidden border border-red-700/60 shadow-2xl bg-black"
+                        onClick={(event) => event.stopPropagation()}
+                    >
+                        {activeImage.photo && !imageErrors[activeImage.name] && (
+                            <img
+                                src={activeImage.photo}
+                                alt={activeImage.name}
+                                className={`w-full h-full object-cover ${activeImage.imageClass || ""}`}
+                                onError={() => handleImageError(activeImage.name)}
+                            />
+                        )}
                     </motion.div>
                 </div>
             )}

@@ -16,6 +16,11 @@ import AidenZhaoImage from "../assets/aiden-zhao.jpg";
 import StephanieBaiImage from "../assets/stephanie-bai.jpg";
 import ValeriePoonImage from "../assets/valerie-poon.jpg";
 import OwenHuImage from "../assets/owen-hu.jpg";
+import AmyZhaoImage from "../assets/amy-zhao.jpg";
+import FrederickZhangImage from "../assets/frederick-zhang.jpg";
+import AaronDuImage from "../assets/aaron-du.jpg";
+import AlvinShanImage from "../assets/alvin-shan.jpg";
+import NinaFanImage from "../assets/nina-fan.jpg";
 
 const Members = () => {
     const [activeMember, setActiveMember] = useState(null);
@@ -271,6 +276,101 @@ const Members = () => {
                 "2023 JOOLA North American Teams Championships D11 Champion",
             ],
         },
+        {
+            name: "Amy Zhao",
+            headline: "Canadian U15 National Team Member",
+            photo: AmyZhaoImage,
+            achievements: [
+                "Canadian U15 National Team Member",
+                "2024 Ontario Summer Games U19 Girls Singles Bronze Medal",
+                "2024 Ontario Summer Games U15 Girls Doubles Silver Medal",
+                "2024 Ontario Summer Games U15 Mixed Doubles Semifinalist",
+                "2024 Canadian Jr. Championships U15 Girls Teams Champion",
+                "2024 Mississauga Championships U17 Girls Singles Silver Medal",
+                "2023 US Open U1600 Singles Silver Medal",
+                "2023 Canadian Jr. Championships U13 Girls Teams Silver Medal",
+                "2023 Ontario Championships U13 Girls Singles Champion",
+                "2022 Ontario Summer Games U13 Mixed Doubles Champion",
+                "2022 Ontario Championships U13 Girls Singles Champion",
+                "2021 Ontario Championships U11 Girls Singles Champion",
+            ],
+        },
+        {
+            name: "Frederick Zhang",
+            headline: "Canadian U19 National Team Member",
+            photo: FrederickZhangImage,
+            achievements: [
+                "Canadian U19 National Team Member",
+                "2025 Canadian Jr. Championships U19 Boys Singles Semifinalist",
+                "2025 Canadian Jr. Championships U17 Boys Singles Finalist",
+                "2024 Canadian Jr. Championships U15 Boys Singles Semifinalist",
+                "2023 Canadian Jr. Championships U15 Boys Singles Champion",
+                "2023 Canadian Jr. Championships U15 Boys Teams Champion",
+                "2023 Pan Am Jr. Selection U15 Boys Singles Champion",
+                "2023 Ontario Championships U15 Boys Singles Champion",
+                "2022 Canadian Jr. Championships U13 Boys Singles Champion",
+                "2022 Canadian Jr. Championships U13 Boys Teams Champion",
+                "2022 Ontario Summer Games U15 Boys Singles Champion",
+                "2022 Ontario Summer Games U15 Mixed Doubles Champion",
+                "2022 Ontario Summer Games U13 Boys Singles Champion",
+                "2022 Ontario Championships U15 Boys Singles Champion",
+                "2022 Ontario Championships U13 Boys Singles Champion",
+            ],
+        },
+        {
+            name: "Aaron Du",
+            headline: "Canadian U15 National Team Member",
+            photo: AaronDuImage,
+            achievements: [
+                "Canadian U15 National Team Member",
+                "2024 Canadian Jr. Championships U17 Boys Singles Bronze Medal, U15 Boys Singles Silver Medal, Teams Silver Medal",
+                "2024 Ontario Summer Games U17 Singles Bronze Medal, U15 Boys Doubles Champion, Mixed Doubles Bronze Medal, Singles Silver Medal",
+                "2024 Ontario Championships U17 Boys Singles Silver Medal, U15 Boys Singles Champion, Doubles Silver Medal, Mixed Doubles Silver Medal",
+                "2024 Mississauga Championships U17 and U15 Singles Champion",
+                "2023 US Open U1900 Singles Champion",
+                "2023 Canadian Jr. Championships U15 Boys Teams Champion",
+                "2023 Ontario Championships U15 Boys Doubles Champion",
+                "2022 Ontario Summer Games U13 Boys Singles Silver Medal",
+                "2022 Canadian Jr. Championships U13 Boys Singles Silver Medal, Teams Champion",
+                "2022 Ontario Spring, Fall and Winter Cup U13 Singles Champion",
+            ],
+        },
+        {
+            name: "Alvin Shan",
+            headline: "Canadian U15 National Team Member",
+            photo: AlvinShanImage,
+            achievements: [
+                "Canadian U15 National Team Member",
+                "2024 WTT Youth Westchester U15 Mixed Doubles Semifinalist",
+                "2024 Pan Am Youth Championships U15 Boys Canada Team",
+                "2024 Ontario Summer Games U19 Boys Doubles Champion",
+                "2024 Ontario Summer Games U15 Boys Singles Champion",
+                "2024 Ontario Summer Games U15 Mixed Doubles Champion",
+                "2024 Canadian Jr. Championships U15 Boys Teams Silver Medal",
+                "2024 Ontario Championships U19 Mixed Doubles Champion",
+                "2024 Ontario Championships U15 Boys Doubles Silver Medal",
+                "2024 Nova Open U17 Boys Singles Silver Medal",
+                "2024 Mississauga Championships U17 Singles Bronze Medal",
+                "2024 Ontario CCTTA Top 8 JAN U19 Singles Champion",
+                "2023 JOOLA North American Team Championships D11 Champion",
+            ],
+        },
+        {
+            name: "Nina Fan",
+            headline: "2024 Ontario Championships U15 Silver Medal",
+            photo: NinaFanImage,
+            achievements: [
+                "2024 Ontario CCTTA Challenge Class C Bronze Medal",
+                "2024 Ontario Championships U15 Girls Doubles Silver Medal",
+                "2023 Canadian Jr. Championships U13 Girls Teams Silver Medal",
+                "2023 Ontario Championships U13 Girls Singles Semifinalist",
+                "2023 Ontario Championships U13 Mixed Doubles Silver Medal",
+                "2023 Ontario Championships U13 Girls Doubles Champion",
+                "2023 Ontario Winter Cup Class 6 Bronze Medal",
+                "2022 Canadian Jr. Championships U15 Girls Teams Champion",
+                "2021 Ontario Championships U11 Girls Singles Bronze Medal",
+            ],
+        },
     ];
 
     const getInitials = (name) =>
@@ -321,13 +421,15 @@ const Members = () => {
                                             setActiveImage(member);
                                         }}
                                     >
-                                        {member.photo && !imageErrors[member.name] && (
+                                        {member.photo && !imageErrors[member.name] ? (
                                             <img
                                                 src={member.photo}
                                                 alt={member.name}
                                                 className={`absolute inset-0 w-full h-full object-cover ${member.imageClass || ""}`}
                                                 onError={() => handleImageError(member.name)}
                                             />
+                                        ) : (
+                                            <span>{getInitials(member.name)}</span>
                                         )}
                                     </button>
                                 </div>
@@ -362,13 +464,15 @@ const Members = () => {
                                         setActiveImage(activeMember);
                                     }}
                                 >
-                                    {activeMember.photo && !imageErrors[activeMember.name] && (
+                                    {activeMember.photo && !imageErrors[activeMember.name] ? (
                                         <img
                                             src={activeMember.photo}
                                             alt={activeMember.name}
                                             className={`absolute inset-0 w-full h-full object-cover ${activeMember.imageClass || ""}`}
                                             onError={() => handleImageError(activeMember.name)}
                                         />
+                                    ) : (
+                                        <span>{getInitials(activeMember.name)}</span>
                                     )}
                                 </button>
                                 <div>
@@ -388,12 +492,9 @@ const Members = () => {
                             <div className="text-gray-300 text-sm uppercase tracking-wide mb-2">
                                 Achievements
                             </div>
-                            <ul className="text-gray-200 text-sm sm:text-base leading-relaxed space-y-2">
+                            <ul className="text-gray-200 text-sm sm:text-base leading-relaxed space-y-2 list-disc list-outside pl-5 marker:text-red-500">
                                 {activeMember.achievements.map((achievement) => (
-                                    <li key={achievement} className="flex gap-2">
-                                        <span className="text-red-500 mt-1">•</span>
-                                        <span>{achievement}</span>
-                                    </li>
+                                    <li key={achievement}>{achievement}</li>
                                 ))}
                             </ul>
                         </div>
@@ -412,13 +513,17 @@ const Members = () => {
                         className="w-[80vw] max-w-[420px] aspect-square rounded-full overflow-hidden border border-red-700/60 shadow-2xl bg-black"
                         onClick={(event) => event.stopPropagation()}
                     >
-                        {activeImage.photo && !imageErrors[activeImage.name] && (
+                        {activeImage.photo && !imageErrors[activeImage.name] ? (
                             <img
                                 src={activeImage.photo}
                                 alt={activeImage.name}
                                 className={`w-full h-full object-cover ${activeImage.imageClass || ""}`}
                                 onError={() => handleImageError(activeImage.name)}
                             />
+                        ) : (
+                            <div className="w-full h-full flex items-center justify-center bg-red-600/30 text-white text-5xl font-bold">
+                                {getInitials(activeImage.name)}
+                            </div>
                         )}
                     </motion.div>
                 </div>

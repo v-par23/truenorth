@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import { motion } from "motion/react";
+import SummerCampFlyer from "../assets/summer-camp.png";
 
 const News = () => {
     return (
@@ -26,6 +27,33 @@ const News = () => {
                     className="text-gray-200 text-sm sm:text-base md:text-lg text-center max-w-xl mb-8 font-extralight"
                 >
                     Exciting updates, event recaps, and club announcements.
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 24 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+                    className="w-full max-w-5xl flex flex-col items-center gap-5 rounded-2xl p-4 sm:p-6 mb-6"
+                >
+                    <div className="text-center">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                            2026 Summer Training Program
+                        </h3>
+                        <div className="text-gray-200 text-sm sm:text-base md:text-lg font-extralight">
+                            Weekend training groups and summer camp sessions — train hard, play smart, grow strong.
+                        </div>
+                        <div className="text-gray-200 text-sm sm:text-base md:text-lg font-extralight mt-2">
+                            Limited spaces available. Register early to secure your spot.
+                        </div>
+                        <div className="text-red-600 font-semibold mt-3 text-xs sm:text-sm md:text-base flex flex-col sm:flex-row sm:items-center sm:justify-center sm:gap-12">
+                            <span>Call: (416) 525-7624</span>
+                            <span>Email: truenorthtabletennis@hotmail.com</span>
+                        </div>
+                    </div>
+                    <img
+                        src={SummerCampFlyer}
+                        alt="2026 Summer Training Program flyer"
+                        className="w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[420px] rounded-xl shadow-2xl"
+                    />
                 </motion.div>
                 <div className="text-red-600 font-semibold mt-4 mb-8 text-xs sm:text-sm md:text-base text-center">
                     Check back soon for the latest news!
